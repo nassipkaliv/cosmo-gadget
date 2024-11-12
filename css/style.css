@@ -158,8 +158,9 @@ header {
 
 .card-category-right img {
     position: relative;
-    right: 25px;
+    right: 40px;
     bottom: 8px;
+    z-index: 0;
 }
 
 .card-category.clock {
@@ -240,5 +241,103 @@ section {
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
+    color: #fff;
+}
+
+.divider-container {
+    background: url("../assets/img/divider-fon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 0px;
+}
+
+.divider {
+    border-bottom: 1px solid #343434;
+}
+
+.divider-first-block {
+    border-radius: 32px;
+    height: 490px;
+    box-shadow: 0 4px 45px 0 rgba(0, 0, 0, 0.4);
+    background: #f5f5f5;
+    padding: 60px 40px;
+    position: relative;
+}
+
+.divider-second-block {
+    box-shadow: 0 4px 45px 0 rgba(0, 0, 0, 0.4);
+    background: #8306a1;
+    border-radius: 32px;
+    height: 490px;
+    padding: 60px 40px;
+    position: relative;
+    bottom: 80px;
+}
+
+.divider-block-title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 111%;
+    color: #222221;
+}
+
+.divider-block-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 133%;
+    color: #222221;
+    margin-top: 25px;
+    max-width: 65%;
+}
+
+.white-text {
+    color: #fff;
+}
+
+.divider-block-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.divider-block-img2 {
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+}
+
+.features-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.features-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-img {
+    width: 80px;
+    height: 80px;
+}
+
+.feature-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 109%;
+    color: #fff;
+}
+
+.feature-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
     color: #fff;
 }
