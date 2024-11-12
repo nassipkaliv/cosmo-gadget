@@ -103,6 +103,10 @@ header {
     color: #00ee9a;
 }
 
+.catalog-nav-links.active {
+    color: #00ee9a;
+}
+
 
 .catalog-rect {
     border-radius: 8px 8px 32px 32px;
@@ -649,4 +653,67 @@ section {
 
   .page404 {
     height: 90vh;
+  }
+
+  .morepages-blocks {
+    border-radius: 32px;
+    background: #343434;
+    padding: 40px;
+  }
+
+  .morepages-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .morepages-blocks-title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 111%;
+    color: #fff;
+  }
+
+  .morepages-blocks-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 136%;
+    color: #fff;
+  }
+
+  .morepages-blocks-text span {
+    font-weight: 700;
+    color: #00ee9a;
+  }
+
+  .morepages-img {
+    background: linear-gradient(133deg, rgba(0, 238, 154, 0.25) 0%, rgba(131, 6, 161, 0.25) 52%), url("../assets/img/morepagesfon.png");
+    border-radius: 32px;
+    height: 212px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+  }
+
+  .morepages-row {
+    display: flex;
+    gap: 40px;
+  }
+
+  .morepages-left {
+    width: 60%;
+  }
+
+  .morepages-right {
+    width: 40%;
+  }
+
+  .form-title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 119%;
+    color: #fff;
   }
