@@ -534,3 +534,119 @@ section {
     text-align: right;
     color: #fff;
 }
+
+.intro {
+    padding-top: 0px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.bread-container {
+    background: #2d2d2c;
+    padding: 16px 0px;
+}
+
+.breadcrumb-item a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #dfdfdf;
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #00ee9a !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before  {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #dfdfdf;
+}
+
+.thankspage {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.page-title {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 94%;
+    text-align: center;
+    color: #fff;
+}
+
+.page-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 136%;
+    text-align: center;
+    color: #fff;
+}
+
+.search-container {
+    position: relative;
+    width: 280px;
+    background: #f0f0f0;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 16px 40px 16px 20px;
+    border: none;
+    border-radius: 999px;
+    background: #f0f0f0;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    color: #7d7d7d;
+  }
+  
+  .search-input::placeholder {
+    color: #AEAEAE;
+  }
+
+  .search-container:focus-within {
+    width: 560px;
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .page-btn {
+    border-radius: 99px;
+    height: 45px;
+    width: 180px;
+    background: #8306a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+  }
+
+  .page404 {
+    height: 90vh;
+  }
