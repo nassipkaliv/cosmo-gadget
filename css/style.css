@@ -848,3 +848,26 @@ section {
     padding: 0;
     min-height: 100vh;
   }
+
+  .main-slider {
+    width: 300px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    margin: 0 auto;
+  }
+  
+  .thumbnail-slider {
+    width: 80%; /* Adjust as needed */
+    height: 80px;
+    margin: 10px auto;
+  }
+  
+  .thumbnail-slider .swiper-slide {
+    width: auto;
+    height: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .thumbnail-slider .swiper-slide-thumb-active {
+    opacity: 1;
+  }
