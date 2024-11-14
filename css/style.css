@@ -697,6 +697,13 @@ section {
     margin-top: 40px;
   }
 
+  .vikup-img {
+    background: url("../assets/img/vikup.png") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 176px;
+  }
+
   .morepages-row {
     display: flex;
     gap: 40px;
@@ -820,3 +827,4 @@ section {
     text-decoration-skip-ink: none;
     color: #bebebe;
   }
+
