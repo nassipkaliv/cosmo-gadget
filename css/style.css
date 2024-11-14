@@ -701,7 +701,17 @@ section {
     background: url("../assets/img/vikup.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 176px;
+    height: 176px !important;
+  }
+
+  .tradein-img {
+    background: #00ee9a;
+    height: 176px !important;
+  }
+
+  .tradein-img img {
+    position: absolute;
+    right: 0;
   }
 
   .morepages-row {
