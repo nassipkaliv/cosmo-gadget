@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О магазине</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="">
@@ -222,32 +221,211 @@
     </section>
 
     <section class="aboutpage">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div class="swiper-container main-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 1" class="img-fluid"></div>
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 2" class="img-fluid"></div>
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 3" class="img-fluid"></div>
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 4" class="img-fluid"></div>
-              </div>
-            </div>
+        <div class="container">
+            <div class="row">
+                <div class="left-block col-lg-6 col-md-12">
+                    <div class="img-picker">
+                      <div id="carouselExample" class="carousel slide">
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active position-relative">
+                              <img src="../assets/img/tovar1.png" class="img-thumbnail modal-trigger carousel-img" />
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <img src="../assets/img/tovar1.png" class="img-thumbnail modal-trigger carousel-img" />                           
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <img src="../assets/img/tovar1.png" class="img-thumbnail modal-trigger carousel-img" />
+                            </div>
+                            <div class="carousel-item position-relative">
+                                <img src="../assets/img/tovar1.png" class="img-thumbnail modal-trigger carousel-img" />
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="d-flex justify-content-between align-items-center mt-2 carousel-bottom">
+                          <a class="carousel-control-prev position-relative" href="#carouselExample" role="button" data-bs-slide="prev">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                                  <path d="M5 1.23016L3.23703 2.97747C1.8311 4.37092 1.12813 5.06764 1.01989 5.91683C0.99337 6.12489 0.99337 6.33543 1.01989 6.5435C1.12813 7.39269 1.8311 8.08941 3.23703 9.48285L5 11.2302" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                              </svg>
+                          </a>
+                          
+                          <div class="d-flex gap-3 mt-3">
+                            <div>
+                                <img src="../assets/img/tovar0.png" class="img-thumbnail active carousel-bottom-img" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Image 1" aria-selected="true" onclick="changeActive(0)">
+                            </div>
+                            <div>
+                                <img src="../assets/img/tovar2.png" class="img-thumbnail carousel-bottom-img" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Image 2" onclick="changeActive(1)">
+                            </div>
+                            <div>
+                                <img src="../assets/img/tovar3.png" class="img-thumbnail carousel-bottom-img" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Image 3" onclick="changeActive(2)">
+                            </div>
+                            <div>
+                              <img src="../assets/img/tovar4.png" class="img-thumbnail carousel-bottom-img" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Image 4" onclick="changeActive(3)">
+                            </div>
+                          </div>
+          
+                          <a class="carousel-control-next position-relative" href="#carouselExample" role="button" data-bs-slide="next">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                                  <path d="M1 1.23016L2.76297 2.97747C4.1689 4.37092 4.87187 5.06764 4.98011 5.91683C5.00663 6.12489 5.00663 6.33543 4.98011 6.5435C4.87187 7.39269 4.1689 8.08941 2.76297 9.48285L1 11.2302" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+                              </svg>
+                          </a>
+                      </div>
             
-            <div class="swiper-container thumbnail-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 1" class="img-fluid"></div>
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 2" class="img-fluid"></div>
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 3" class="img-fluid"></div>
-                <div class="swiper-slide"><img src="../assets/img/tovar1.png" alt="Image 4" class="img-fluid"></div>
-              </div>
+                       
+                    </div>
+                      <div class="img-counter mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20" fill="none">
+                          <use xlink:href="assets/icons.svg#photo-icon"></use>
+                        </svg>
+                        6 фото
+                        </div>
+                    </div>
+                </div>
+                <div class="right-block col-lg-6 col-md-12">
+                    <div class="tovar-name">
+                        Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                    </div>
+                    <div class="tovar-features">
+                        <div class="d-flex gap-4">
+                            <div class="tovar-price">240 999 <span>₽</span></div>
+                            <div class="tovar-crossed-price position-relative">
+                                <div class="crossed-line"></div>
+                                340 000 ₽
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 align-items-center">
+                            <div class="tovar-features-text">
+                                арт: 0054938012
+                            </div>
+                            <div class="d-flex align-items-center gap-1">
+                                <button class="border-0 bg-transparent">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="17" stroke="#EC1B4D" stroke-width="2" />
+                                        <path d="M23.0396 9C22.0078 9.0166 20.9985 9.31461 20.1137 9.86393C19.2288 10.4132 18.4997 11.1944 18 12.1286C17.5003 11.1944 16.7712 10.4132 15.8863 9.86393C15.0015 9.31461 13.9922 9.0166 12.9604 9C11.3156 9.07394 9.76589 9.8184 8.64991 11.0708C7.53393 12.3231 6.94236 13.9815 7.00444 15.6837C7.00444 19.9945 11.3898 24.7025 15.0678 27.8946C15.8891 28.6086 16.9273 29 18 29C19.0727 29 20.1109 28.6086 20.9321 27.8946C24.6102 24.7025 28.9956 19.9945 28.9956 15.6837C29.0576 13.9815 28.4661 12.3231 27.3501 11.0708C26.2341 9.8184 24.6844 9.07394 23.0396 9ZM19.7547 26.444C19.2636 26.872 18.6421 27.1066 18 27.1066C17.3579 27.1066 16.7364 26.872 16.2453 26.444C11.5374 22.357 8.83703 18.4359 8.83703 15.6837C8.77439 14.4842 9.17273 13.3077 9.94517 12.4108C10.7176 11.5139 11.8015 10.9694 12.9604 10.8961C14.1193 10.9694 15.2031 11.5139 15.9756 12.4108C16.748 13.3077 17.1463 14.4842 17.0837 15.6837C17.0837 15.9352 17.1802 16.1763 17.3521 16.3541C17.5239 16.5319 17.757 16.6318 18 16.6318C18.243 16.6318 18.4761 16.5319 18.6479 16.3541C18.8198 16.1763 18.9163 15.9352 18.9163 15.6837C18.8537 14.4842 19.252 13.3077 20.0244 12.4108C20.7969 11.5139 21.8807 10.9694 23.0396 10.8961C24.1985 10.9694 25.2824 11.5139 26.0548 12.4108C26.8273 13.3077 27.2256 14.4842 27.163 15.6837C27.163 18.4359 24.4626 22.357 19.7547 26.4403V26.444Z" fill="#EC1B4D" />
+                                    </svg>
+                                </button>
+                                <button class="border-0 bg-transparent">
+                                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="18" cy="18" r="17" stroke="#7D7D7D" stroke-width="2" />
+                                        <path d="M13 18C13 17.4477 12.5523 17 12 17C11.4477 17 11 17.4477 11 18L13 18ZM13 25L13 18L11 18L11 25L13 25Z" fill="#7D7D7D" />
+                                        <path d="M19 11C19 10.4477 18.5523 10 18 10C17.4477 10 17 10.4477 17 11L19 11ZM19 25L19 11L17 11L17 25L19 25Z" fill="#7D7D7D" />
+                                        <path d="M25 15C25 14.4477 24.5523 14 24 14C23.4477 14 23 14.4477 23 15L25 15ZM25 25L25 15L23 15L23 25L25 25Z" fill="#7D7D7D" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tovar-details">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="tovar-details-text">
+                                    Цвет
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div class="d-flex align-items-center">
+                                    <button class="tovar-colour active">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="15" cy="15" r="15" fill="#D9D9D9" />
+                                        </svg>
+                                    </button>
+                                    <button class="tovar-colour">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="15" cy="15" r="15" fill="#D88181" />
+                                        </svg>
+                                    </button>
+                                    <button class="tovar-colour">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="15" cy="15" r="15" fill="#7C8050" />
+                                        </svg>
+                                    </button>
+                                    <button class="tovar-colour">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="15" cy="15" r="15" fill="#3151A3" />
+                                        </svg>
+                                    </button>
+                                    <button class="tovar-colour">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="15" cy="15" r="15" fill="#E3FAFF" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="tovar-details-text">
+                                    Объем накопителя
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mt-3">
+                                <div class="d-flex align-items-center gap-1">
+                                    <button class="detail-btn active">
+                                        256 ГБ
+                                    </button>
+                                    <button class="detail-btn">
+                                        512 ГБ
+                                    </button>
+                                    <button class="detail-btn">
+                                        1 ТБ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="tovar-details-text">
+                                    Оперативная память
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mt-3">
+                                <div class="d-flex align-items-center gap-1">
+                                    <button class="detail-ozu-btn">
+                                        8 ГБ
+                                    </button>
+                                    <button class="detail-ozu-btn">
+                                        16 ГБ
+                                    </button>
+                                    <button class="detail-ozu-btn active">
+                                        32 ГБ
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-3">
+                                <div class="tovar-details-text">
+                                    Разрешение дисплея
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mt-3">
+                                <div class="d-flex align-items-center gap-1">
+                                    <button class="detail-display-btn">
+                                        1280 х 960
+                                    </button>
+                                    <button class="detail-display-btn active">
+                                        1920 х 1080
+                                    </button>
+                                    <button class="detail-display-btn">
+                                        3840 х 2160
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tovar-buttons">
+                        <button class="korzina-btn">
+                            В корзину
+                            <div class="ms-3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.2844 4.077C22.996 3.73944 22.635 3.46795 22.227 3.28182C21.8189 3.09568 21.3739 2.99946 20.9234 3H4.34871L4.30566 2.649C4.21754 1.91942 3.85806 1.24673 3.29535 0.758478C2.73265 0.270223 2.00585 0.000341793 1.25274 0L1.02516 0C0.753268 0 0.492515 0.105357 0.300261 0.292893C0.108007 0.48043 0 0.734784 0 1C0 1.26522 0.108007 1.51957 0.300261 1.70711C0.492515 1.89464 0.753268 2 1.02516 2H1.25274C1.50384 2.00003 1.74619 2.08996 1.93383 2.25272C2.12146 2.41547 2.24134 2.63975 2.27072 2.883L3.68134 14.583C3.82778 15.7998 4.42711 16.9218 5.36557 17.736C6.30403 18.5502 7.5163 19 8.77226 19H19.478C19.7499 19 20.0106 18.8946 20.2029 18.7071C20.3951 18.5196 20.5031 18.2652 20.5031 18C20.5031 17.7348 20.3951 17.4804 20.2029 17.2929C20.0106 17.1054 19.7499 17 19.478 17H8.77226C8.13775 16.9983 7.51931 16.8051 7.00175 16.4471C6.48418 16.089 6.09282 15.5835 5.88132 15H18.1012C19.303 15.0001 20.4666 14.5882 21.3887 13.8364C22.3108 13.0846 22.9328 12.0407 23.146 10.887L23.9507 6.533C24.031 6.10101 24.013 5.65707 23.8978 5.23264C23.7827 4.80821 23.5732 4.41368 23.2844 4.077ZM21.9383 6.178L21.1326 10.532C21.0046 11.225 20.6307 11.852 20.0765 12.3032C19.5223 12.7544 18.8231 13.0011 18.1012 13H5.55532L4.59065 5H20.9234C21.074 4.99912 21.223 5.03062 21.3597 5.09226C21.4964 5.15389 21.6175 5.24415 21.7144 5.35661C21.8113 5.46907 21.8816 5.60097 21.9203 5.74294C21.959 5.8849 21.9651 6.03344 21.9383 6.178Z" fill="#222221" />
+                                    <path d="M7.17629 24C8.30865 24 9.2266 23.1046 9.2266 22C9.2266 20.8954 8.30865 20 7.17629 20C6.04393 20 5.12598 20.8954 5.12598 22C5.12598 23.1046 6.04393 24 7.17629 24Z" fill="#222221" />
+                                    <path d="M17.4278 24C18.5601 24 19.4781 23.1046 19.4781 22C19.4781 20.8954 18.5601 20 17.4278 20C16.2954 20 15.3774 20.8954 15.3774 22C15.3774 23.1046 16.2954 24 17.4278 24Z" fill="#222221" />
+                                </svg>
+                            </div>
+                        </button>
+                        <button class="one-click-btn">
+                            Купить в 1 клик
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-12">
-            something
-          </div>
-        </div>
-      </div>
+          </div>          
     </section>
 
 
@@ -361,23 +539,25 @@
     </footer>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-      var mainSlider = new Swiper('.main-slider', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      });
-    
-      var thumbnailSlider = new Swiper('.thumbnail-slider', {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        slideToClickedSlide: true,
-      });
-    
-      // Connect the sliders
-      mainSlider.controller.control = thumbnailSlider;
-      thumbnailSlider.controller.control = mainSlider;
-    </script>
+        var thumbSlider = new Swiper('.thumb-slider', {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+      
+        var mainSlider = new Swiper('.main-slider', {
+          spaceBetween: 10,
+          thumbs: {
+            swiper: thumbSlider,
+          },
+        });
+      </script>
+      
+      <script src="../js/main.js"></script>
 
 
 </body>
