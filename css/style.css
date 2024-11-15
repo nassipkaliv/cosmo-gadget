@@ -1002,3 +1002,45 @@ section {
     border-radius: 99px;
     padding: 0 30px;
    }
+
+   .tovar-questions {
+    margin-top: 50px;
+   }
+
+   .tovar-question {
+    border-top: 1px solid #343434;
+    border-bottom: 1px solid #343434;
+    padding: 25px 0;
+    cursor: pointer;
+   }
+
+   .tovar-question-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 162%;
+    color: #fff;
+   }
+
+   .tovar-question-btn {
+    border-radius: 4px;
+    width: 42px;
+    height: 42px;
+    background: #454545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   }
+
+   .tovarDescriptionCollapse {
+    margin-top: 30px;
+   }
+
+   .tovarDescription-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #fff;
+   }
