@@ -1160,10 +1160,6 @@ section {
    .desktopSwiper, .desktopSwiper2 {
     margin-top: 40px;
    }
-
-
-
-
    
    .swiper-button-prev,
    .swiper-button-prev2 {
@@ -1195,3 +1191,94 @@ section {
     gap: 30px;
 }
 
+.izbrannoe-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid #343434;
+    padding: 25px 0;
+}
+
+.last-izbrannoe-item {
+    border-bottom: 1px solid #343434;
+}
+
+.izbrannoe-item-first {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.izbrannoe-delete {
+    border: none;
+    background: transparent;
+}
+
+.izbrannoe-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    color: #fff;
+}
+
+.izbrannoe-text {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 137%;
+    color: #7d7d7d;
+    margin-top: 10px;
+}
+
+.izbrannoe-item-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.izbrannoe-price {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 122%;
+    color: #fff;
+}
+
+.izbrannoe-price span {
+    font-weight: 400;
+}
+
+.price-net {
+    color: #7d7d7d;
+}
+
+.izbrannoe-nalichie {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    color: #00ee9a;
+}
+
+.net-nalichii {
+    color: #ec1b4d;
+}
+
+.izbrannoe-btn {
+    border: 1px solid rgba(117, 255, 206, 0.15);
+    border-radius: 99px;
+    padding: 0 20px;
+    height: 50px;
+    background: #00ee9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    text-align: center;
+    color: #222221;
+}
