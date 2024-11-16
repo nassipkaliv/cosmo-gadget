@@ -1191,6 +1191,23 @@ section {
     gap: 30px;
 }
 
+.izbrannoe {
+    min-height: 80vh;
+}
+
+.empty-message {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    color: #fff;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    display: none;
+    margin-top: 15%;
+}
+
 .izbrannoe-item {
     display: flex;
     align-items: center;
@@ -1282,3 +1299,4 @@ section {
     text-align: center;
     color: #222221;
 }
+
