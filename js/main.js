@@ -90,3 +90,43 @@ document.querySelectorAll('.sravnenya-btn').forEach(button => {
       button.classList.add('active');
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const itemCounters = document.querySelectorAll('.item-counter');
+
+  itemCounters.forEach((counter) => {
+      const decreaseBtn = counter.querySelector('.decrease');
+      const increaseBtn = counter.querySelector('.increase');
+      const counterValue = counter.querySelector('.counter-value');
+      const pricePerUnit = counter.closest('.izbrannoe-item-second').querySelector('.price-per-unit');
+
+      function updatePrice() {
+          const quantity = parseInt(counterValue.value, 10) || 1;
+          const unitPrice = parseInt(pricePerUnit.dataset.price, 10);
+          const totalPrice = quantity * unitPrice;
+          pricePerUnit.textContent = totalPrice.toLocaleString(); // Formats with thousands separator
+      }
+
+      decreaseBtn.addEventListener('click', () => {
+          let value = parseInt(counterValue.value, 10) || 1;
+          if (value > 1) {
+              counterValue.value = value - 1;
+              updatePrice();
+          }
+      });
+
+      increaseBtn.addEventListener('click', () => {
+          let value = parseInt(counterValue.value, 10) || 1;
+          counterValue.value = value + 1;
+          updatePrice();
+      });
+
+      counterValue.addEventListener('input', () => {
+          let value = parseInt(counterValue.value, 10);
+          if (isNaN(value) || value < 1) {
+              counterValue.value = 1;
+          }
+          updatePrice();
+      });
+  });
+});
