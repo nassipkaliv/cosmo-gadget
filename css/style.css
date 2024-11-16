@@ -458,6 +458,7 @@ section {
     width: 100%;
     background: #343434;
     padding: 40px 0px;
+    margin-top: 40px;
 }
 
 .footer-block {
@@ -1044,3 +1045,76 @@ section {
     line-height: 133%;
     color: #fff;
    }
+
+   .tovar-card {
+    border-radius: 16px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    padding-bottom: 10px;
+   }
+
+   .tovar-card-title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 143%;
+    color: #222221;
+   }
+
+   .tovar-card-price {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    color: #222221;
+   }
+
+   .tovar-card-svg {
+    position: relative;
+    margin-left: auto;
+    bottom: 10px;
+    cursor: pointer;
+   }
+
+   .tovar-more {
+    margin-top: 80px;
+   }
+
+   .desktopSwiper, .desktopSwiper2 {
+    margin-top: 40px;
+   }
+
+
+   
+   .swiper-button-prev,
+   .swiper-button-prev2 {
+    background-image: url('../assets/img/swiper-button-prev.png');
+    width: 42px;
+    height: 42px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0;
+    color: transparent;    
+}
+
+   .swiper-button-next,
+   .swiper-button-next2 {
+    background-image: url('../assets/img/swiper-button-next.png');
+    width: 42px;
+    height: 42px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 0;
+    color: transparent;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
