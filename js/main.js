@@ -83,3 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+document.querySelectorAll('.sravnenya-btn').forEach(button => {
+  button.addEventListener('click', () => {
+      document.querySelectorAll('.sravnenya-btn').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+  });
+});

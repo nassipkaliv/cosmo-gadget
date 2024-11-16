@@ -1348,3 +1348,69 @@ section {
     align-items: center;
     margin-bottom: 16px;
 }
+
+.sravnenya-buttons {
+    margin-top: 40px;
+    padding: 30px 0;
+    border-top: 1px solid #343434;
+    border-bottom: 1px solid #343434;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.sravnenya-btn {
+    border: 1px solid rgba(117, 255, 206, 0.15);
+    border-radius: 99px;
+    height: 50px;
+    padding: 0 20px;
+    background: #d9d9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    text-align: center;
+    color: #222221;
+}
+
+.sravnenya-btn.active {
+    background: #00ee9a;
+}
+
+.character {
+    margin-top: 40px;
+}
+
+.characterTitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 162%;
+    color: #fff;
+}
+
+.characterTable {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.characterTableRow {
+    border-top: 1px solid #343434;
+}
+
+.characterBlock {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 16px;
+}
+
+.characterBlockText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+}
