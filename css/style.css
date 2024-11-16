@@ -1300,3 +1300,51 @@ section {
     color: #222221;
 }
 
+.swiperArrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.arrow-left {
+ background-image: url('../assets/img/Назад.png');
+ width: 32px;
+ height: 32px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+ margin-top: 0;
+ color: transparent;    
+}
+
+.arrow-right {
+ background-image: url('../assets/img/Далее.png');
+ width: 32px;
+ height: 32px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+ margin-top: 0;
+ color: transparent;
+}
+
+.swiperArrowContainerText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+.swiperArrowContainerText span {
+    font-weight: 700;
+}
+
+.delete-slide {
+    border: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
