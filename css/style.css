@@ -1513,7 +1513,6 @@ input::-webkit-inner-spin-button {
     overflow: hidden;
     transition: height 0.35s ease, opacity 0.35s ease;
     opacity: 0;
-    margin-top: 40px;
 }
 
 .collapse-content.show {
@@ -1540,4 +1539,24 @@ input::-webkit-inner-spin-button {
     line-height: 122%;
     text-align: center;
     color: #ec1b4d;
+}
+
+.form-commentary {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 135%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 99px;
+    padding: 5px 14px;
+    background: #8306a1;
+    margin-top: 20px;
+}
+
+.lico-btn1, .lico-btn2 {
+    margin-top: 40px;
 }
