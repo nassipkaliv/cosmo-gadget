@@ -1560,3 +1560,44 @@ input::-webkit-inner-spin-button {
 .lico-btn1, .lico-btn2 {
     margin-top: 40px;
 }
+
+.cart-label {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #00ee9a;
+    max-width: 80%;
+}
+
+.cart-label a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #48a5f2;
+}
+
+.cart-check {
+    border-radius: 16px;
+    background: #343434;
+    padding: 300px 20px;
+}
+
+.cart-check-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 162%;
+    color: #fff;
+}
+
+.cart-check-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    color: #fff;
+}
+
+.cart-check-text span {
+    font-weight: 800;
+}
+
