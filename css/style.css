@@ -1502,3 +1502,20 @@ input::-webkit-inner-spin-button {
     display: flex;
     gap: 100px;
 }
+
+.cart-last  {
+    margin-top: 60px;
+}
+
+.collapse-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.35s ease, opacity 0.35s ease;
+    opacity: 0;
+    margin-top: 40px;
+}
+
+.collapse-content.show {
+    opacity: 1;
+}
+

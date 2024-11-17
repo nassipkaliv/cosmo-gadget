@@ -130,3 +130,48 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
+
+document.querySelectorAll('.tovar-question').forEach((question) => {
+  const content = question.querySelector('.collapse-content');
+
+  question.addEventListener('click', (e) => {
+      const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+      if (isExpanded) {
+          // Collapse
+          question.setAttribute('aria-expanded', false);
+          content.style.height = `${content.scrollHeight}px`; // Set height explicitly to allow transition
+          requestAnimationFrame(() => {
+              content.style.height = '0'; // Set height to 0 for collapsing
+          });
+          content.classList.remove('show');
+      } else {
+          // Expand
+          question.setAttribute('aria-expanded', true);
+          content.style.height = '0'; // Set initial height for transition
+          content.classList.add('show');
+          requestAnimationFrame(() => {
+              content.style.height = `${content.scrollHeight}px`; // Expand to full height
+          });
+
+          // Reset height to "auto" after the transition ends
+          content.addEventListener(
+              'transitionend',
+              () => {
+                  if (question.getAttribute('aria-expanded') === 'true') {
+                      content.style.height = 'auto';
+                  }
+              },
+              { once: true }
+          );
+      }
+  });
+
+  // Prevent collapse from closing when interacting with internal buttons
+  question.querySelectorAll('.sravnenya-btn').forEach((button) => {
+      button.addEventListener('click', (e) => {
+          e.stopPropagation();
+      });
+  });
+});
