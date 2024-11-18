@@ -1703,3 +1703,26 @@ input::-webkit-inner-spin-button {
     content: none
   }
   
+
+  #slider {
+    background-color: #F0F0F0;
+    height: 3px;
+  }
+
+  #slider .noUi-connect {
+    background: #00ee9a;
+  }
+
+  #slider .noUi-handle {
+    width: 16px;
+    height: 16px;
+    background-color: #00ee9a;
+    border: 2px solid #00ee9a;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: none;
+  }
+
+  .noUi-handle:after, .noUi-handle:before {
+    content: none;
+  }
