@@ -1631,3 +1631,27 @@ input::-webkit-inner-spin-button {
     color: #fff;
     margin-top: 10px;
 }
+
+.input_checkbox .text-white > span {
+    color: #fff !important;
+}
+
+.receivedContentText{
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.komissyaText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    text-align: right;
+    color: #fff;
+    font-weight: 400;
+}
+
+.komissyaText span {
+    font-weight: 900;
+}

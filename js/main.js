@@ -168,7 +168,6 @@ document.querySelectorAll('.tovar-question').forEach((question) => {
       }
   });
 
-  // Prevent collapse from closing when interacting with internal buttons
   question.querySelectorAll('.sravnenya-btn').forEach((button) => {
       button.addEventListener('click', (e) => {
           e.stopPropagation();
