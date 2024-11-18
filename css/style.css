@@ -1139,7 +1139,7 @@ section {
     height: 30px;
     position: relative;
     bottom: 0px;
-    transform: translateX(35%);
+    transform: translateX(50%);
     background: #00ee9a;
     display: flex;
     align-items: center;
@@ -1655,3 +1655,51 @@ input::-webkit-inner-spin-button {
 .komissyaText span {
     font-weight: 900;
 }
+
+
+.tovar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px; 
+  }
+
+
+@media (max-width: 768px) {
+    .tovar-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .tovar-grid {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+
+  .tovar-filter {
+    border-radius: 16px;
+    background: #343434;
+    padding: 30px 20px;
+  }
+
+  .filter-dropdown {
+    background: #f0f0f0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 99px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #222221;
+    text-decoration: none;
+  }
+
+  .dropdown-toggle::after {
+    content: none
+  }
+  

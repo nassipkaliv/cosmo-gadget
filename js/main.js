@@ -174,3 +174,5 @@ document.querySelectorAll('.tovar-question').forEach((question) => {
       });
   });
 });
+
+
