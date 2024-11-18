@@ -757,7 +757,7 @@ section {
     color: #fff !important;
     height: 50px;
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 7px;
 }
 
   .form-control::placeholder {
@@ -1578,7 +1578,7 @@ input::-webkit-inner-spin-button {
 .cart-check {
     border-radius: 16px;
     background: #343434;
-    padding: 300px 20px;
+    padding: 40px 30px;
 }
 
 .cart-check-title {
@@ -1587,6 +1587,7 @@ input::-webkit-inner-spin-button {
     font-size: 26px;
     line-height: 162%;
     color: #fff;
+    margin-bottom: 16px;
 }
 
 .cart-check-text {
@@ -1595,9 +1596,38 @@ input::-webkit-inner-spin-button {
     font-size: 18px;
     line-height: 122%;
     color: #fff;
+    margin-bottom: 25px;
 }
 
 .cart-check-text span {
     font-weight: 800;
 }
 
+.cart-form {
+    border-top: 1px solid #454545;
+    border-bottom: 1px solid #454545;
+    padding: 40px 0;
+}
+
+.form-svg-accept {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.cart-price-small-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    color: #fff;
+}
+
+.cart-price-big-text {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 162%;
+    color: #fff;
+    margin-top: 10px;
+}
