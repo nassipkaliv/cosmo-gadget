@@ -1820,3 +1820,42 @@ input::-webkit-inner-spin-button {
   .noshow {
     display: none;
   }
+
+  .tovar-pagination {
+    border-radius: 16px;
+    background: #2d2d2c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    height: 60px;
+    margin-top: 20px;
+  }
+
+  .page-link {
+    width: 32px;
+    height: 32px;
+    background: #454545;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border-color: transparent !important;
+    transition: all 0.3s ease;
+  }
+
+  .page-link.active {
+    background: #00ee9a;
+    border-color: transparent;
+    color: #222221;
+  }
+
+  .page-link:hover {
+    background: #00ee9a;
+    color: #222221;
+  }
