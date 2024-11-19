@@ -1859,3 +1859,24 @@ input::-webkit-inner-spin-button {
     background: #00ee9a;
     color: #222221;
   }
+
+  .tovar-search {
+    border-radius: 16px;
+    height: 60px;
+    padding: 8px 16px;
+    background: #00ee9a;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .tovar-search-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #222221;
+  }
+
+  .tovar-search-text span {
+    font-weight: 700;
+  }
