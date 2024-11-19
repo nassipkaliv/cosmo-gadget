@@ -1726,3 +1726,19 @@ input::-webkit-inner-spin-button {
   .noUi-handle:after, .noUi-handle:before {
     content: none;
   }
+
+  .slider-button {
+    background: #f0f0f0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-radius: 99px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    color: #222221;
+    text-decoration: none;
+  }
