@@ -1437,7 +1437,7 @@ section {
     position: absolute;
     z-index: 1;
     left: 0;
-    top: -1px;
+    top: 4px;
     width: 20px;
     height: 20px;
     box-sizing: border-box;
@@ -1741,4 +1741,82 @@ input::-webkit-inner-spin-button {
     line-height: 133%;
     color: #222221;
     text-decoration: none;
+  }
+
+  .dropItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .dropContent {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  
+  .arrow-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .dropItem.active .arrow-icon {
+    transform: rotate(90deg);
+  }
+
+  .input_checkbox .dropLabel > span {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .dropContent {
+    display: none;
+  }
+  
+  .dropContent.open {
+    display: block;
+  }
+  
+  .arrow-icon.rotated {
+    transform: rotate(90deg);
+  }
+
+  .dropShowMore {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 0.65);
+    padding-left: 30px;
+  }
+
+  .dropShowLess {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: rgba(255, 255, 255, 0.65);
+    padding-left: 30px; 
+  }
+
+  .additionalOptions {
+    display: none;
+  }
+  
+  .noshow {
+    display: none;
   }

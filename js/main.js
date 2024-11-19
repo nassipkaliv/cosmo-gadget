@@ -176,3 +176,45 @@ document.querySelectorAll('.tovar-question').forEach((question) => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.dropItem').forEach((dropItem) => {
+    dropItem.addEventListener('click', () => {
+      const dropContent = dropItem.nextElementSibling;
+      const arrowIcon = dropItem.querySelector('.arrow-icon');
+
+      if (dropContent) {
+        dropContent.classList.toggle('open');
+        arrowIcon.classList.toggle('rotated');
+      }
+    });
+  });
+});
+
+
+document.querySelector('.dropShowMore').addEventListener('click', function() {
+  var additionalOptions = document.querySelector('.additionalOptions');
+  var showMoreText = this;
+
+  if (additionalOptions.style.display === 'none' || additionalOptions.style.display === '') {
+      additionalOptions.style.display = 'block';
+      showMoreText.textContent = 'Показать меньше';
+  } else {
+      additionalOptions.style.display = 'none';
+      showMoreText.textContent = 'Показать еще (3)';
+  }
+});
+
+document.querySelector('.dropShowLess').addEventListener('click', function() {
+    var checkboxes = document.querySelectorAll('.input_checkbox.mb-2');
+    var showLessText = this;
+
+    for (var i = 3; i < checkboxes.length; i++) {
+        checkboxes[i].classList.toggle('noshow');
+    }
+
+    if (checkboxes[3].classList.contains('noshow')) {
+        showLessText.textContent = 'Свернуть';
+    } else {
+        showLessText.textContent = 'Показать еще';
+    }
+});
