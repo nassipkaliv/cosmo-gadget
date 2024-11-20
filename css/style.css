@@ -2194,3 +2194,16 @@ input::-webkit-inner-spin-button {
    .color-red {
     color: #ec1b4d;
    }
+
+   .color-green {
+    font-weight: 500;
+    color: #0f9566 !important; 
+   }
+
+   .otmenen {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 122%;
+    color: #ec1b4d;
+   }
