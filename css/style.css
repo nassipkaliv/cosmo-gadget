@@ -2413,3 +2413,51 @@ input::-webkit-inner-spin-button {
    .search-bar-input {
     padding-left: 20% !important;
    }
+
+   .mainBanner {
+    border-radius: 32px;
+    background: #343434;
+    position: relative;
+    height: 660px;
+    padding: 50px 40px;
+   }
+
+   .mainBannerSmallTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+   }
+
+   .mainBannerImg {
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+   }
+
+   .mainBannerLeft {
+    width: 40%;
+   }
+
+   .mainBannerBigTitle {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 100%;
+    color: #fff;
+    margin-top: 30%;
+   }
+
+   .text-normal {
+    text-transform: none !important;
+    margin-top: 60px;
+   }
+
+   .mainBannerBg {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+   }
