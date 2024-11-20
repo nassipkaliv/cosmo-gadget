@@ -2388,3 +2388,28 @@ input::-webkit-inner-spin-button {
    .search-bar-dropdown-menu {
     background: #f0f0f0 !important;
    }
+
+   .izbImg {
+     width: 70px;
+     height: 70px;
+   }
+   
+   .izbTitle {
+     font-family: var(--font-family);
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 143%;
+     color: #fff;
+   }
+   
+   .izbPrice {
+     font-family: var(--font-family);
+     font-weight: 900;
+     font-size: 14px;
+     line-height: 157%;
+     color: #fff;
+   }
+
+   .search-bar-input {
+    padding-left: 20% !important;
+   }
