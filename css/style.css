@@ -2207,3 +2207,20 @@ input::-webkit-inner-spin-button {
     line-height: 122%;
     color: #ec1b4d;
    }
+
+   .backBtn {
+    border: 1px solid #8306a1;
+    border-radius: 99px;
+    height: 45px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+   }

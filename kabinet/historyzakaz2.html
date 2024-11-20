@@ -213,7 +213,7 @@
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="#">Главная</a></li>
               <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Активные заказы</li>
+              <li class="breadcrumb-item active" aria-current="page">История заказов</li>
             </ol>
           </nav>
         </div>
@@ -225,7 +225,7 @@
       <div class="container">
         <div class="row kabinetRow">
           <div class="col-lg-4">
-            <h1 class="kabinet-title kab-t">Ваши активные заказы</h1>
+            <h1 class="kabinet-title kab-t">Ваша история заказов</h1>
             <div class="kabinetLeft">
               <button class="kabinetLeftButton">
                 <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,13 +234,13 @@
                 </svg>
                 Главная страница профиля
               </button>
-              <button class="kabinetLeftButton active">
+              <button class="kabinetLeftButton">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.83333 13.3333H20V7.5H5.83333V13.3333ZM11.6667 0H5.83333V5.83333H11.6667V0ZM13.3333 1.66667V5.83333H20V1.66667H13.3333ZM20 16.6667H19.1667V17.5C19.1667 18.8783 18.045 20 16.6667 20C15.2883 20 14.1667 18.8783 14.1667 17.5V16.6667H10V17.5C10 18.8783 8.87833 20 7.5 20C6.12167 20 5 18.8783 5 17.5V16.6667C3.62167 16.6667 2.5 15.545 2.5 14.1667V2.5C2.5 2.04 2.12583 1.66667 1.66667 1.66667H0V0H1.66667C3.045 0 4.16667 1.12167 4.16667 2.5V14.1667C4.16667 14.6267 4.54083 15 5 15H20V16.6667Z" fill="#222221" />
                 </svg>
                 Активные заказы
               </button>
-              <button class="kabinetLeftButton">
+              <button class="kabinetLeftButton active">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M7.5 18.3333C7.5 19.2542 6.75417 20 5.83333 20C4.9125 20 4.16667 19.2542 4.16667 18.3333C4.16667 17.4125 4.9125 16.6667 5.83333 16.6667C6.75417 16.6667 7.5 17.4125 7.5 18.3333ZM14.1667 16.6667C13.2458 16.6667 12.5 17.4125 12.5 18.3333C12.5 19.2542 13.2458 20 14.1667 20C15.0875 20 15.8333 19.2542 15.8333 18.3333C15.8333 17.4125 15.0875 16.6667 14.1667 16.6667ZM20 4.16667C20 6.4675 18.1342 8.33333 15.8333 8.33333C13.5325 8.33333 11.6667 6.4675 11.6667 4.16667C11.6667 1.86583 13.5325 0 15.8333 0C18.1342 0 20 1.86583 20 4.16667ZM17.5 5.83333C17.825 5.50833 17.825 4.98 17.5 4.655L16.6667 3.82167V2.5C16.6667 2.04 16.2933 1.66667 15.8333 1.66667C15.3733 1.66667 15 2.04 15 2.5V4.16667C15 4.3875 15.0875 4.6 15.2442 4.75583L16.3217 5.83333C16.6467 6.15833 17.175 6.15833 17.5 5.83333ZM15.8333 10.0958C12.6167 10.0958 10 7.47833 10 4.2625C10 3.64833 10.0967 3.05667 10.2742 2.5H4.36833L4.33417 2.20667C4.185 0.948333 3.1175 0 1.85167 0H0.833333C0.3725 0 0 0.373333 0 0.833333C0 1.29333 0.3725 1.66667 0.833333 1.66667H1.85167C2.27417 1.66667 2.63 1.98333 2.67917 2.4025L3.82583 12.1542C4.07333 14.2517 5.8525 15.8342 7.96417 15.8342H15.8333C16.2942 15.8342 16.6667 15.4608 16.6667 15.0008C16.6667 14.5408 16.2942 14.1675 15.8333 14.1675H7.96417C6.8875 14.1675 5.96083 13.4792 5.61417 12.5008H15.1342C17.1133 12.5008 18.8317 11.0925 19.2192 9.15167L19.2533 8.97917C18.2908 9.67917 17.1117 10.0967 15.8333 10.0967V10.0958Z" fill="#222221" />
                 </svg>
@@ -269,30 +269,207 @@
           </div>
           <div class="col-lg-8">
             <div class="kabinetRight pt-0">
-              <h1 class="kabinet-title color-red">Отмена заказа <span class="fw-bold">№06994232</span> от 09.08.24</h1>
-              <form class="kabinetZakaz">
-                <div class="noZakaz mb-2">
-                  Вы уверены, что хотите отменить заказ №06994232?  
+              <div class="d-flex align-items-center justify-content-between kab-t">
+                <h1 class="kabinet-title">
+                  <span class="fw-normal">Заказ</span> <span class="fw-bold">№06994232</span> <span class="fw-normal">от 09.08.24</span>
+                </h1>
+                <button class="backBtn">
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM17 7L1 7L1 9L17 9L17 7Z" fill="white" />
+                  </svg>
+                  В список заказов
+                </button>
+              </div>
+              <div class="activeZakazBlock">
+                <div class="activeZakazBlockRow">
+                  <div class="activeZakazTitle">Заказ <span>№06994232</span> от <span>09.08.24</span></div>
+                  <div class="activeZakazBlockRight">
+                    <div class="activeZakazBlockRightText">
+                      2 товара
+                    </div>
+                    <div class="activeZakazBlockRightPrice">
+                      140 500 <span>₽</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="noZakaz">
-                  Отмена заказа необратима.
+                <div class="activeZakazRow">
+                  <div class="zakazTitle">Информация о заказе</div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="zakazTitle2">Ф.И.О</div>
+                      <div class="activeZakazBlockRightText">
+                        Счет №06994232 от 09.08.24
+                      </div>
+                    </div>
+                    <div class="activeZakazBlockRight">
+                      <div>
+                        <div class="zakazTitle2">Текущий статус</div>
+                        <div class="activeZakazBlockRightText">
+                          <span class="color-green">Выполнен 19.08.24</span>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="zakazTitle2 text-end">Сумма</div>
+                        <div class="activeZakazBlockRightPrice">
+                          140 500 <span>₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <textarea class="form-control mt-4" id="exampleFormControlTextarea1" rows="3" placeholder="Укажите причину отмены заказа"></textarea>
-                <div class="d-flex gap-4 mt-4">
-                  <button class="nazadBtn">
-                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.292893 7.29289C-0.0976311 7.68342 -0.0976311 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM17 7L1 7L1 9L17 9L17 7Z" fill="#222221" />
-                    </svg>
-                    Назад
-                  </button>
-                  <button class="otmenaBtn">
-                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L14 14M14 1L1 14" stroke="white" stroke-width="2" stroke-linecap="round" />
-                    </svg>
-                    Отменить заказ
-                  </button>
+                <div class="activeZakazRow">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="zakazTitle2">Параметры оплаты</div>
+                      <div class="activeZakazBlockRightText">
+                        Ожидается поступление средств
+                      </div>
+                    </div>
+                    <div class="activeZakazBlockRight">
+                      <div>
+                        <div class="zakazTitle2">Способ оплаты</div>
+                        <div class="activeZakazBlockRightText">
+                          Наличными
+                        </div>
+                      </div>
+                      <div>
+                        <div class="zakazTitle2 text-end">Итого</div>
+                        <div class="activeZakazBlockRightPrice">
+                          140 500 <span>₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </form>
+                <div class="activeZakazRow lastZakazRow">
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                      <div class="zakazTitle2">Параметры отгрузки</div>
+                      <div class="activeZakazBlockRightText">
+                        Отгрузка №06994232/2
+                      </div>
+                    </div>
+                    <div class="activeZakazBlockRight">
+                      <div>
+                        <div class="zakazTitle2">Способ доставки</div>
+                        <div class="activeZakazBlockRightText">
+                          Самовывоз
+                        </div>
+                      </div>
+                      <div>
+                        <div class="zakazTitle2 text-end">Стоимость доставки</div>
+                        <div class="activeZakazBlockRightPrice">
+                          500 <span>₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activeZakazBlockRightText mt-2 text-start">
+                    Статус доставки: <span class="color-green">заказ получен</span>
+                  </div>
+                </div>
+  
+                <div class="activeZakazBlockRightText kab-b">
+                  <p class="fw-bold">Содержимое заказа</p>
+                </div>
+  
+                <div class="activeZakazRow">
+                  <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
+                      <div class="izbrannoe-text-content pe-4">
+                        <div class="izbrannoe-title color-b">
+                          Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                        </div>
+                        <div class="izbrannoe-text">
+                          арт: 0054938012
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activeZakazBlockRight">
+                      <div class="activeZakazBlockRightText сolor-7">
+                        1 шт.
+                      </div>
+                      <div class="activeZakazBlockRightPrice">
+                        240 999 <span>₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="activeZakazRow">
+                  <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/img/izbrannoeimg2.png" alt="izbrannoe-img">
+                      <div class="izbrannoe-text-content pe-4">
+                        <div class="izbrannoe-title color-b">
+                          Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                        </div>
+                        <div class="izbrannoe-text">
+                          арт: 0054938012
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activeZakazBlockRight">
+                      <div class="activeZakazBlockRightText сolor-7">
+                        1 шт.
+                      </div>
+                      <div class="activeZakazBlockRightPrice">
+                        240 999 <span>₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="activeZakazRow lastZakazRow">
+                  <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/img/izbrannoeimg2.png" alt="izbrannoe-img">
+                      <div class="izbrannoe-text-content pe-4">
+                        <div class="izbrannoe-title color-b">
+                          Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                        </div>
+                        <div class="izbrannoe-text">
+                          арт: 0054938012
+                        </div>
+                      </div>
+                    </div>
+                    <div class="activeZakazBlockRight">
+                      <div class="activeZakazBlockRightText сolor-7">
+                        1 шт.
+                      </div>
+                      <div class="activeZakazBlockRightPrice">
+                        240 999 <span>₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+  
+  
+                <div class="d-flex align-items-center justify-content-between mt-4">
+                  <div class="d-flex justify-content-between w-65">
+                    <div>
+                      <div class="zakazTitle2">Сумма товаров</div>
+                      <div class="activeZakazBlockRightPrice text-start">
+                        140 000 <span>₽</span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="zakazTitle2">Стоимость доставки</div>
+                      <div class="activeZakazBlockRightPrice text-start">
+                        500 <span>₽</span>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="zakazTitle2">Итого</div>
+                      <div class="activeZakazBlockRightPrice text-start">
+                        140 500 <span>₽</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
