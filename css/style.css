@@ -2360,3 +2360,31 @@ input::-webkit-inner-spin-button {
     text-decoration-skip-ink: none;
     color: #bebebe;
    }
+
+   .search-bar-svg {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+   }
+
+   .search-bar-dropdown {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 20px;
+   }
+
+   .search-bar-dropdown-content {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #aeaeae;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   }
+
+   .search-bar-dropdown-menu {
+    background: #f0f0f0 !important;
+   }

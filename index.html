@@ -19,8 +19,35 @@
             </a>
             
             <!-- Search Bar -->
-            <form class="search-bar d-flex mx-4 flex-grow-1">
-                <input type="text" class="form-control rounded-pill" placeholder="Поиск">
+            <form class="search-bar d-flex mx-4 flex-grow-1 position-relative">
+                <svg class="search-bar-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.7195 22.3067L17.7554 16.3426C19.3807 14.3548 20.1798 11.8184 19.9874 9.25796C19.7951 6.69754 18.6259 4.309 16.7219 2.5864C14.8178 0.863809 12.3245 -0.0610491 9.75763 0.00313002C7.19079 0.0673091 4.74681 1.11562 2.93121 2.93121C1.11562 4.74681 0.0673091 7.19079 0.00313002 9.75763C-0.0610491 12.3245 0.863809 14.8178 2.5864 16.7219C4.309 18.6259 6.69754 19.7951 9.25796 19.9874C11.8184 20.1798 14.3548 19.3807 16.3426 17.7554L22.3067 23.7195C22.4951 23.9015 22.7475 24.0022 23.0095 24C23.2715 23.9977 23.5221 23.8926 23.7073 23.7073C23.8926 23.5221 23.9977 23.2715 24 23.0095C24.0022 22.7475 23.9015 22.4951 23.7195 22.3067ZM10.0238 18.0172C8.44282 18.0172 6.89737 17.5484 5.58286 16.6701C4.26835 15.7917 3.24381 14.5433 2.6388 13.0827C2.0338 11.6221 1.8755 10.0149 2.18393 8.46433C2.49236 6.91376 3.25366 5.48946 4.37156 4.37156C5.48946 3.25366 6.91376 2.49236 8.46433 2.18393C10.0149 1.8755 11.6221 2.0338 13.0827 2.6388C14.5433 3.24381 15.7917 4.26835 16.6701 5.58286C17.5484 6.89737 18.0172 8.44282 18.0172 10.0238C18.0148 12.143 17.1719 14.1748 15.6734 15.6734C14.1748 17.1719 12.143 18.0148 10.0238 18.0172Z" fill="#AEAEAE" />
+                </svg>
+                <input type="text" class="form-control rounded-pill">
+                <div class="search-bar-dropdown">
+                    <a class="search-bar-dropdown-content" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Категория
+                        <svg width="9" height="5" viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.81308 0.206184C8.75333 0.140851 8.68223 0.0889952 8.60391 0.0536073C8.52558 0.0182193 8.44156 0 8.35671 0C8.27185 0 8.18783 0.0182193 8.10951 0.0536073C8.03118 0.0889952 7.96008 0.140851 7.90033 0.206184L4.95638 3.39864C4.89662 3.46397 4.82553 3.51583 4.7472 3.55122C4.66887 3.58661 4.58485 3.60483 4.5 3.60483C4.41514 3.60483 4.33113 3.58661 4.2528 3.55122C4.17447 3.51583 4.10338 3.46397 4.04362 3.39864L1.09967 0.206184C1.03992 0.140851 0.968823 0.0889952 0.890494 0.0536073C0.812164 0.0182193 0.728149 0 0.643294 0C0.558439 0 0.474423 0.0182193 0.396094 0.0536073C0.317765 0.0889952 0.246672 0.140851 0.186917 0.206184C0.0671977 0.336784 0 0.513451 0 0.697599C0 0.881748 0.0671977 1.05841 0.186917 1.18901L3.1373 4.38844C3.49886 4.78004 3.98898 5 4.5 5C5.01101 5 5.50113 4.78004 5.8627 4.38844L8.81308 1.18901C8.9328 1.05841 9 0.881748 9 0.697599C9 0.513451 8.9328 0.336784 8.81308 0.206184Z" fill="#BFBFBF" />
+                        </svg>
+                        <svg width="1" height="40" viewBox="0 0 1 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="0.5" y1="2.18557e-08" x2="0.499998" y2="40" stroke="#BFBFBF"/>
+                        </svg>    
+                    </a>
+                  
+                    <ul class="dropdown-menu search-bar-dropdown-menu">
+                      <li><a class="dropdown-item text-start" href="#">Apple</a></li>
+                      <li><a class="dropdown-item text-start" href="#">Samsung</a></li>
+                      <li><a class="dropdown-item text-start" href="#">PlayStation</a></li>
+                      <li><a class="dropdown-item text-start" href="#">Dyson</a></li>
+                      <li><a class="dropdown-item text-start" href="#">Xiaomi</a></li>
+                      <li><a class="dropdown-item text-start" href="#">Huawei</a></li>
+                      <li><a class="dropdown-item text-start" href="#">Google</a></li>
+                      <li><a class="dropdown-item text-start" href="#">Sony</a></li>
+                      <li><a class="dropdown-item text-start" href="#">GoPro</a></li>
+                      <li><a class="dropdown-item text-start" href="#">Аксессуары</a></li>
+                    </ul>
+                  </div>
             </form>
 
             <div class="d-flex gap-3">
