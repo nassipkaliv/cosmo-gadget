@@ -190,31 +190,15 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const editBtn = document.getElementById("editBtn");
+  const editableContent = document.getElementById("editableContent");
 
-document.querySelector('.dropShowMore').addEventListener('click', function() {
-  var additionalOptions = document.querySelector('.additionalOptions');
-  var showMoreText = this;
+  editableContent.style.display = "none";
 
-  if (additionalOptions.style.display === 'none' || additionalOptions.style.display === '') {
-      additionalOptions.style.display = 'block';
-      showMoreText.textContent = 'Показать меньше';
-  } else {
-      additionalOptions.style.display = 'none';
-      showMoreText.textContent = 'Показать еще (3)';
-  }
-});
-
-document.querySelector('.dropShowLess').addEventListener('click', function() {
-    var checkboxes = document.querySelectorAll('.input_checkbox.mb-2');
-    var showLessText = this;
-
-    for (var i = 3; i < checkboxes.length; i++) {
-        checkboxes[i].classList.toggle('noshow');
-    }
-
-    if (checkboxes[3].classList.contains('noshow')) {
-        showLessText.textContent = 'Свернуть';
-    } else {
-        showLessText.textContent = 'Показать еще';
-    }
+  editBtn.addEventListener("click", (event) => {
+    event.preventDefault(); 
+    editableContent.style.display = "block"; 
+    editBtn.style.display = "none"; 
+  });
 });

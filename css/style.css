@@ -2224,3 +2224,39 @@ input::-webkit-inner-spin-button {
     color: #fff;
     background: transparent;
    }
+
+   .changeText {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+   }
+
+   .changeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+    height: 50px;
+    padding: 8px 60px;
+    background: #8306a1;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+   }
+
+   .cancelBtn {
+    background: #d9d9d9;
+    color: #222221;
+   }
+
+   .form-control:focus {
+    background: #fff !important;
+    color: #222221 !important;
+   }
+
+   
