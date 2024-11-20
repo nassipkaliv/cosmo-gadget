@@ -2158,3 +2158,39 @@ input::-webkit-inner-spin-button {
   .w-65 {
     width: 65%;
   }
+
+  .nazadBtn {
+    border-radius: 99px;
+    height: 45px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #00ee9a;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #222221;
+  }
+
+  .otmenaBtn {
+    border-radius: 99px;
+    height: 45px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ec1b4d;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+   }
+
+   .color-red {
+    color: #ec1b4d;
+   }
