@@ -576,7 +576,7 @@ section {
 }
 
 .thankspage {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2278,6 +2278,10 @@ input::-webkit-inner-spin-button {
     font-size: 32px;
    }
 
+   .authTitle-3 {
+    font-size: 36px;
+   }
+
    .authForm {
     margin-top: 20px;
    }
@@ -2336,4 +2340,23 @@ input::-webkit-inner-spin-button {
     text-transform: uppercase;
     text-align: center;
     color: #222221;
+   }
+
+   .w-min {
+    width: 295px;
+   }
+
+   .form-under-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #7d7d7d;
+    margin-top: 16px;
+   }
+
+   .form-under-text a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #bebebe;
    }
