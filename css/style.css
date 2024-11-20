@@ -1880,3 +1880,122 @@ input::-webkit-inner-spin-button {
   .tovar-search-text span {
     font-weight: 700;
   }
+
+  .kabinet-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 94%;
+    color: #fff;
+  }
+
+  .kabinetRow {
+    margin-top: 50px;
+  }
+
+  .kabinetLeft {
+    border-radius: 16px;
+    background: #343434;
+    padding: 30px 25px;
+  }
+
+  .kabinetLeftButton {
+    width: 100%;
+    background: #d9d9d9;
+    border-radius: 99px;
+    height: 50px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137%;
+    color: #222221;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;  
+  }
+
+  .kabinetLeftButton.active {
+    background: #00ee9a;
+  }
+
+  .kabinetLeftButton:hover {
+    background: #00ee9a;
+  }
+
+  .kabinetLeftExit {
+    border: 1px solid #d9d9d9;
+    border-radius: 99px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 8px 16px;
+    gap: 16px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 137%;
+    color: #fff;
+    width: 50%;
+  }
+
+  .userBigText {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+  }
+
+  .userSmallText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+  }
+
+  .userSmallText span {
+    color: #00ee9a;
+  }
+
+  .kabinetRight {
+    padding-left: 30px;
+    padding-top: 16px;
+  }
+
+  .kabinetZakaz {
+    margin-top: 50px;
+  }
+
+  .zakazRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #343434;
+    padding: 16px 0;  
+  }
+
+  .zakazRowLeft {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 122%;
+    color: #00ee9a;
+  }
+
+  .zakazRowRight {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 122%;
+    text-align: right;
+    color: #fff;
+  }
+
+  .zakazRowRight span {
+    font-weight: 400;
+  }
