@@ -2033,7 +2033,7 @@ input::-webkit-inner-spin-button {
   }
 
   .activeZakazBlockRight {
-    width: 35%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2044,7 +2044,6 @@ input::-webkit-inner-spin-button {
     font-weight: 400;
     font-size: 18px;
     line-height: 122%;
-    text-align: center;
     color: #222221;
   }
 
@@ -2116,4 +2115,46 @@ input::-webkit-inner-spin-button {
     color: #7d7d7d;
     height: 45px;
     gap: 10px;
+  }
+
+  .kab-t {
+    margin-bottom: 40px;
+  }
+
+  .kab-b {
+    margin-top: 40px;
+  }
+
+  .zakazTitle2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 157%;
+    color: #252525;
+    margin-bottom: 8px;
+  }
+
+  .zakazAmount {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    text-align: right;
+    color: #787878;
+  }
+
+  .zakazTovarRow {
+    gap: 60px;
+  }
+
+  .color-b {
+    color: #222221;
+  }
+
+  .сolor-7 {
+    color: #787878;
+  }
+
+  .w-65 {
+    width: 65%;
   }
