@@ -1999,3 +1999,11 @@ input::-webkit-inner-spin-button {
   .zakazRowRight span {
     font-weight: 400;
   }
+
+  .noZakaz {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #dfdfdf;
+  }
