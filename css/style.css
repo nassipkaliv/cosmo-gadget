@@ -2007,3 +2007,113 @@ input::-webkit-inner-spin-button {
     line-height: 150%;
     color: #dfdfdf;
   }
+
+  .activeZakazBlock {
+    border-radius: 16px;
+    background: #f0f0f0;
+    padding: 30px 20px;
+  }
+
+  .activeZakazBlockRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .activeZakazTitle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    color: #8306a1;
+  }
+
+  .activeZakazTitle span {
+    font-weight: 900;
+  }
+
+  .activeZakazBlockRight {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .activeZakazBlockRightText {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122%;
+    text-align: center;
+    color: #222221;
+  }
+
+  .activeZakazBlockRightText span {
+    color: #8306a1;
+  }
+
+  .activeZakazBlockRightPrice {
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 122%;
+    text-align: right;
+    color: #222221;
+  }
+
+  .activeZakazBlockRightPrice span {
+    font-weight: 400;
+  }
+
+  .activeZakazRow {
+    margin-top: 20px;
+    border-top: 1px solid #bfbfbf;
+    padding: 25px 0;
+  }
+
+  .lastZakazRow {
+    border-bottom: 1px solid #bfbfbf;
+  }
+
+  .zakazTitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    color: #222221;
+    margin-bottom: 16px;
+  }
+
+  .zakazBtn {
+    background: #8306a1;
+    border-radius: 99px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #fff;
+    border-color: transparent;
+    height: 45px;
+  }
+
+  .noZakazBtn {
+    background: transparent;
+    border-radius: 99px;
+    border: 1px solid #ec1b4d;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: #7d7d7d;
+    height: 45px;
+    gap: 10px;
+  }
