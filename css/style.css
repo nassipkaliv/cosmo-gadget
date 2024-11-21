@@ -2418,7 +2418,7 @@ input::-webkit-inner-spin-button {
     border-radius: 32px;
     background: #343434;
     position: relative;
-    height: 660px;
+    min-height: 655px;
     padding: 50px 40px;
    }
 
@@ -2436,6 +2436,7 @@ input::-webkit-inner-spin-button {
     position: absolute;
     bottom: 0;
     right: 0; 
+    border-radius: 32px;
    }
 
    .mainBannerLeft {
@@ -2461,3 +2462,59 @@ input::-webkit-inner-spin-button {
     z-index: 0;
     top: 0;
    }
+
+    button.custom-prev, button.custom-next {
+      position: absolute;
+      top: 90%;
+      transform: translateY(-50%);
+      background: #fff;
+      border: none;
+      border-radius: 99px;
+      width: 51px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      z-index: 5;
+    }
+
+    button.custom-prev:hover, button.custom-next:hover {
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    button.custom-prev {
+      left: 30px;
+    }
+
+    button.custom-next {
+      left: 90px;
+    }
+
+    button.custom-prev svg, button.custom-next svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .verticalNav {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .verticalNavBlock {
+      border-radius: 99px;
+      width: 8px;
+      height: 20px;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .verticalNavBlock.active {
+      background: #00ee9a;
+      height: 30px;
+    }

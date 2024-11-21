@@ -203,4 +203,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.querySelector('#carouselExampleFade');
+  const verticalNavBlocks = document.querySelectorAll('.verticalNavBlock');
 
+  if (carousel && verticalNavBlocks.length) {
+      const carouselInstance = new bootstrap.Carousel(carousel);
+
+      carousel.addEventListener('slid.bs.carousel', () => {
+          const activeSlideIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex((item) =>
+              item.classList.contains('active')
+          );
+
+          verticalNavBlocks.forEach((block, index) => {
+              block.classList.toggle('active', index === activeSlideIndex);
+          });
+      });
+
+      verticalNavBlocks.forEach((block, index) => {
+          block.addEventListener('click', () => {
+              verticalNavBlocks.forEach((b) => b.classList.remove('active'));
+
+              block.classList.add('active');
+
+              carouselInstance.to(index);
+          });
+      });
+  }
+});
