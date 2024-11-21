@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosmo Gadget</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=853641f4-0f80-47e2-b733-ea92cfc0a151&lang=ru_RU"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -98,12 +99,6 @@
                             <path d="M27.344 17.216C26.7733 17.216 26.2373 17.1093 25.736 16.896C25.2347 16.6773 24.8 16.368 24.432 15.968C24.0693 15.568 23.8053 15.096 23.64 14.552L25.256 14.104C25.4107 14.6 25.68 14.9813 26.064 15.248C26.448 15.5093 26.8747 15.6373 27.344 15.632C27.7653 15.6267 28.136 15.528 28.456 15.336C28.776 15.144 29.0267 14.8853 29.208 14.56C29.3893 14.2293 29.48 13.8507 29.48 13.424C29.48 12.784 29.28 12.256 28.88 11.84C28.4853 11.424 27.968 11.216 27.328 11.216C27.1467 11.216 26.96 11.2427 26.768 11.296C26.5813 11.3493 26.4053 11.4187 26.24 11.504L25.456 10.184L29.52 6.592L29.696 7.072H24.096V5.48H31.024V7.072L27.648 10.32L27.632 9.776C28.3573 9.776 28.9867 9.93867 29.52 10.264C30.0533 10.584 30.464 11.0213 30.752 11.576C31.0453 12.1253 31.192 12.7413 31.192 13.424C31.192 14.16 31.0187 14.8133 30.672 15.384C30.3307 15.9547 29.8693 16.4027 29.288 16.728C28.712 17.0533 28.064 17.216 27.344 17.216Z" fill="white"/>
                             </svg>
                     </a>
-                    
-                    <div id="popover" class="popover">
-                        <div class="popover-content">
-                            Ваш контент поповера здесь.
-                        </div>
-                    </div>
                     
                 </div>
             </div>
@@ -689,7 +684,7 @@
                             БЦ "Рубин", первый этаж, основная проходная. </span>
                         </div>
                         <div class="mt-3">
-                            <img src="../assets/img/footer-map.png" alt="footer-map" class="footer-map img-fluid">
+                            <div id="map" style="width: 356px;height: 180px;"></div>
                         </div>
                     </div>
                 </div>
@@ -760,6 +755,32 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    initMap();
+
+        async function initMap() {
+            await ymaps3.ready;
+        
+            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+        
+            const map = new YMap(
+                document.getElementById('map'),
+        
+                {
+                    location: {
+                        // Координаты центра карты
+                        center: [37.501143, 55.742241],
+                    
+                        // Уровень масштабирования
+                        zoom: 16
+                    }
+                }
+            );
+            
+            map.addChild(new YMapDefaultSchemeLayer());
+        }
+    </script>
 
 </body>
 </html>
