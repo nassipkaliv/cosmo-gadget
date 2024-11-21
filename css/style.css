@@ -2572,3 +2572,136 @@ input::-webkit-inner-spin-button {
     .gap-20p {
       gap: 16px;
     }
+
+
+    @media (max-width: 768px) {
+      
+      .search-bar input {
+        display: none !important;
+      }
+
+      .search-bar-dropdown-content {
+        display: none;
+      }
+
+      .search-bar-svg {
+        display: none;
+      }
+
+      .catalog-rect {
+        display: none;
+      }
+
+      .d-flex .catalog-nav-links {
+        display: none;
+      }
+
+      .icon-bar-contact {
+        display: none !important;
+      }
+
+      .mainBannerLeft {
+        width: 100%;
+      }
+
+      .mainBannerBigTitle {
+        margin-top: 30px;
+        font-size: 54px;
+        line-height: 100%;
+      }
+
+      .text-normal {
+        margin-top: 20px;
+        width: 80%;
+      }
+
+      .mainBanner {
+        min-height: 720px;
+      }
+
+      .card-category.clock {
+        margin-top: 25px;
+      }
+
+      .card-category-right img {
+        position: relative;
+        right: 0px;
+        bottom: 8px;
+        z-index: 0;
+      }
+
+      section {
+        padding: 40px 0;
+      }
+
+      .section-title {
+        font-size: 44px;
+      }
+      
+      .categories-card-row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 30px;
+      }
+
+      .categories-card {
+        height: 170px;
+      }
+
+      .divider-container .container {
+        flex-direction: column !important;
+      }
+
+      .divider-second-block {
+        bottom: 0;
+      }
+
+      .divider-container {
+        background: url(../assets/img/divider-containerbg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 60px 0px;
+        padding-bottom: 90px;
+        border-radius: 32px;
+      }
+
+      .divider-block-title {
+        font-size: 44px;
+      }
+
+      .divider-block-text {
+        max-width: 100%;
+      }
+
+      .divider-block-img2 {
+        position: absolute;
+        right: -60px;
+        bottom: -80px;
+        max-width: 70%;
+      }
+
+      .features-container {
+        flex-direction: column;
+      }
+
+      .services-row {
+        flex-direction: column;
+        margin-top: 50px;
+      }
+
+      .loyal-title {
+        font-size: 44px;
+      }
+
+      .loyal-container {
+        flex-direction: column;
+        margin-top: 60px;
+      }
+
+      .loyal-container .loyal-btn {
+        display: none;
+      }
+    
+
+    }
