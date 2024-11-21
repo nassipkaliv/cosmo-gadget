@@ -2559,3 +2559,16 @@ input::-webkit-inner-spin-button {
       line-height: 130%;
       color: #fff;
     }
+
+    .contactMap {
+      width: 100%;
+      min-height: 320px;
+    }
+
+    .ymaps3x0--map-container {
+      border-radius: 16px;
+    }
+
+    .gap-20p {
+      gap: 16px;
+    }
