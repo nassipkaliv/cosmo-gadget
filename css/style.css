@@ -230,7 +230,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: 0;
 }
 
 .categories-card-title {
@@ -2517,4 +2517,17 @@ input::-webkit-inner-spin-button {
     .verticalNavBlock.active {
       background: #00ee9a;
       height: 30px;
+    }
+
+
+    .categories-card:hover {
+      background: #2d2d2c;
+    }
+
+    .categories-card:hover .categories-card-choose {
+      color: #00ee9a;
+    }
+
+    .categories-card:hover .categories-card-choose svg path {
+      fill: #00ee9a;
     }
