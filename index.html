@@ -860,6 +860,32 @@
     </footer>
 
     <script>
+        initMap();
+    
+            async function initMap() {
+                await ymaps3.ready;
+            
+                const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+            
+                const map = new YMap(
+                    document.getElementById('map2'),
+            
+                    {
+                        location: {
+                            // Координаты центра карты
+                            center: [37.501143, 55.742241],
+                        
+                            // Уровень масштабирования
+                            zoom: 16
+                        }
+                    }
+                );
+                
+                map.addChild(new YMapDefaultSchemeLayer());
+            }
+    </script>
+
+    <script>
     initMap();
 
         async function initMap() {
@@ -885,31 +911,6 @@
         }
     </script>
 
-<script>
-    initMap();
-
-        async function initMap() {
-            await ymaps3.ready;
-        
-            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
-        
-            const map = new YMap(
-                document.getElementById('map2'),
-        
-                {
-                    location: {
-                        // Координаты центра карты
-                        center: [37.501143, 55.742241],
-                    
-                        // Уровень масштабирования
-                        zoom: 16
-                    }
-                }
-            );
-            
-            map.addChild(new YMapDefaultSchemeLayer());
-        }
-    </script>
 
 </body>
 </html>
