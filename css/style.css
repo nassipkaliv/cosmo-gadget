@@ -2852,6 +2852,13 @@ input::-webkit-inner-spin-button {
         top: 45%;
       }
 
+      .character {
+        flex-direction: column;
+        padding-left: 20px;
+        overflow-x: scroll;
+        min-width: 100vw;
+      }
+
     }
 
     @media (max-width: 480px) {
