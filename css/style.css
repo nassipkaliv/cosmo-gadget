@@ -2573,8 +2573,20 @@ input::-webkit-inner-spin-button {
       gap: 16px;
     }
 
+    .mobile {
+      display: none;
+    }
+
 
     @media (max-width: 768px) {
+
+      .desktop {
+        display: none;
+      }
+
+      .mobile {
+        display: flex;
+      }
       
       .search-bar input {
         display: none !important;
@@ -2702,6 +2714,70 @@ input::-webkit-inner-spin-button {
       .loyal-container .loyal-btn {
         display: none;
       }
-    
+      
+
+      .footerMap {
+        width: 100%;
+        height: 281px;
+      }
+
+      .footer-contact {
+        flex-direction: column;
+      }
+
+      .footer-block {
+        height: auto;
+      }
+
+      .footer-logo {
+        width: 230px;
+        display: flex;
+        justify-self: center;
+        margin-bottom: 20px;
+      }
+
+      .footer-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+        gap: 16px;
+      }
+
+      .catalog-nav-links {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .footer-contact-text {
+        font-size: 30px;
+      }
+
+      .footer-contact-text span {
+        font-size: 22px;
+      }
+
+      .footer-contact-btn {
+        margin: 30px 0;
+        font-size: 22px;
+        width: 330px;
+        height: 70px;
+      }
+
+      .footer-text {
+        text-align: center;
+        font-size: 16px;
+
+      }
+
 
     }
+
+
+    @media (min-width: 1900px) {
+      .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+          max-width: 1440px;
+      }
+  }
