@@ -214,7 +214,7 @@
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="#">Главная</a></li>
               <li class="breadcrumb-item"><a href="#">Личный кабинет</a></li>
-              <li class="breadcrumb-item active" aria-current="page">История заказов</li>
+              <li class="breadcrumb-item active" aria-current="page">Активные заказы</li>
             </ol>
           </nav>
         </div>
@@ -226,7 +226,13 @@
       <div class="container">
         <div class="row kabinetRow">
           <div class="col-lg-4">
-            <h1 class="kabinet-title kab-t">Ваша история заказов</h1>
+            <h1 class="kabinet-title kab-t mb-3">Ваша история заказов</h1>
+            <button class="backBtn mobile mb-3">
+              <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM17 7L1 7L1 9L17 9L17 7Z" fill="white" />
+              </svg>
+              В список заказов
+            </button>
             <div class="kabinetLeft">
               <button class="kabinetLeftButton">
                 <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -271,10 +277,10 @@
           <div class="col-lg-8">
             <div class="kabinetRight pt-0">
               <div class="d-flex align-items-center justify-content-between kab-t">
-                <h1 class="kabinet-title">
+                <h1 class="kabinet-title kab-sza">
                   <span class="fw-normal">Заказ</span> <span class="fw-bold">№06994232</span> <span class="fw-normal">от 09.08.24</span>
                 </h1>
-                <button class="backBtn">
+                <button class="backBtn desktop">
                   <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.292892 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292892 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292892 7.29289ZM17 7L1 7L1 9L17 9L17 7Z" fill="white" />
                   </svg>
@@ -295,18 +301,18 @@
                 </div>
                 <div class="activeZakazRow">
                   <div class="zakazTitle">Информация о заказе</div>
-                  <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center justify-content-between f-col">
                     <div>
                       <div class="zakazTitle2">Ф.И.О</div>
                       <div class="activeZakazBlockRightText">
-                        Счет №06994232 от 09.08.24
+                        Иванов Иван Иванович
                       </div>
                     </div>
-                    <div class="activeZakazBlockRight">
+                    <div class="activeZakazBlockRight activeZakazBlockRight2">
                       <div>
                         <div class="zakazTitle2">Текущий статус</div>
                         <div class="activeZakazBlockRightText">
-                          <span class="color-green">Выполнен 19.08.24</span>
+                          Принят, ожидается оплата
                         </div>
                       </div>
                       <div>
@@ -319,14 +325,14 @@
                   </div>
                 </div>
                 <div class="activeZakazRow">
-                  <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center justify-content-between f-col">
                     <div>
                       <div class="zakazTitle2">Параметры оплаты</div>
                       <div class="activeZakazBlockRightText">
                         Ожидается поступление средств
                       </div>
                     </div>
-                    <div class="activeZakazBlockRight">
+                    <div class="activeZakazBlockRight activeZakazBlockRight2">
                       <div>
                         <div class="zakazTitle2">Способ оплаты</div>
                         <div class="activeZakazBlockRightText">
@@ -343,18 +349,21 @@
                   </div>
                 </div>
                 <div class="activeZakazRow lastZakazRow">
-                  <div class="d-flex align-items-center justify-content-between">
+                  <div class="d-flex align-items-center justify-content-between f-col">
                     <div>
                       <div class="zakazTitle2">Параметры отгрузки</div>
                       <div class="activeZakazBlockRightText">
                         Отгрузка №06994232/2
                       </div>
+                      <div class="activeZakazBlockRightText mt-2 text-start mobile">
+                        Статус доставки: <span>заказ передан курьеру</span>
+                      </div>
                     </div>
-                    <div class="activeZakazBlockRight">
+                    <div class="activeZakazBlockRight activeZakazBlockRight2">
                       <div>
                         <div class="zakazTitle2">Способ доставки</div>
                         <div class="activeZakazBlockRightText">
-                          Самовывоз
+                          Курьерская
                         </div>
                       </div>
                       <div>
@@ -365,8 +374,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="activeZakazBlockRightText mt-2 text-start">
-                    Статус доставки: <span class="color-green">заказ получен</span>
+                  <div class="activeZakazBlockRightText mt-2 text-start desktop">
+                    Статус доставки: <span>заказ передан курьеру</span>
                   </div>
                 </div>
   
@@ -374,7 +383,7 @@
                   <p class="fw-bold">Содержимое заказа</p>
                 </div>
   
-                <div class="activeZakazRow">
+                <div class="activeZakazRow desktop">
                   <div class="zakazTovarRow d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center gap-3">
                       <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
@@ -397,8 +406,34 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="activeZakazRow mobile">
+                  <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
+                      <div class="izbrannoe-text-content pe-4">
+                        <div>
+                          <div class="izbrannoe-title color-b">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="activeZakazBlockRightPrice">
+                            240 999 <span>₽</span>
+                          </div>
+                          <div class="izbrannoe-text activeZakazIzbText">
+                            арт: 0054938012
+                          </div>
+                          <div class="activeZakazBlockRightText сolor-7">
+                            1 шт.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
   
-                <div class="activeZakazRow">
+                <div class="activeZakazRow desktop">
                   <div class="zakazTovarRow d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center gap-3">
                       <img src="../assets/img/izbrannoeimg2.png" alt="izbrannoe-img">
@@ -421,8 +456,34 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="activeZakazRow mobile">
+                  <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
+                      <div class="izbrannoe-text-content pe-4">
+                        <div>
+                          <div class="izbrannoe-title color-b">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="activeZakazBlockRightPrice">
+                            240 999 <span>₽</span>
+                          </div>
+                          <div class="izbrannoe-text activeZakazIzbText">
+                            арт: 0054938012
+                          </div>
+                          <div class="activeZakazBlockRightText сolor-7">
+                            1 шт.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
   
-                <div class="activeZakazRow lastZakazRow">
+                <div class="activeZakazRow lastZakazRow desktop">
                   <div class="zakazTovarRow d-flex align-items-center justify-content-between">
                     <div class="d-flex align-items-center gap-3">
                       <img src="../assets/img/izbrannoeimg2.png" alt="izbrannoe-img">
@@ -445,11 +506,37 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="activeZakazRow lastZakazRow mobile">
+                  <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-3">
+                      <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
+                      <div class="izbrannoe-text-content pe-4">
+                        <div>
+                          <div class="izbrannoe-title color-b">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                          <div class="activeZakazBlockRightPrice">
+                            240 999 <span>₽</span>
+                          </div>
+                          <div class="izbrannoe-text activeZakazIzbText">
+                            арт: 0054938012
+                          </div>
+                          <div class="activeZakazBlockRightText сolor-7">
+                            1 шт.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
   
   
   
-                <div class="d-flex align-items-center justify-content-between mt-4">
-                  <div class="d-flex justify-content-between w-65">
+                <div class="d-flex align-items-center justify-content-between mt-4 f-col al-end">
+                  <div class="d-flex justify-content-between w-65 wid-mob-100">
                     <div>
                       <div class="zakazTitle2">Сумма товаров</div>
                       <div class="activeZakazBlockRightPrice text-start">
@@ -469,6 +556,12 @@
                       </div>
                     </div>
                   </div>
+                  <button class="noZakazBtn">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1L14 14M14 1L1 14" stroke="#EC1B4D" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    Отменить заказ
+                  </button>
                 </div>
               </div>
             </div>
