@@ -233,3 +233,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+  document.getElementById('callbackForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const inputs = document.querySelectorAll('.form-control');
+    let isValid = true;
+
+    inputs.forEach((input) => {
+      if (!input.value.trim()) {
+        input.classList.add('error'); 
+        isValid = false;
+      } else {
+        input.classList.remove('error'); 
+      }
+    });
+
+    if (isValid) {
+      alert('Форма успешно отправлена!');
+    }
+  });

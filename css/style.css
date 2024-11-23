@@ -2354,6 +2354,10 @@ input::-webkit-inner-spin-button {
     margin-top: 16px;
    }
 
+   .form-control.error {
+    border: 1px solid #7d7d7d !important;
+    }
+
    .form-under-text a {
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -2581,6 +2585,125 @@ input::-webkit-inner-spin-button {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
+    }
+
+    .cart-container {
+      position: relative;
+      display: inline-block;
+    }
+    
+
+    
+    .cart-menu {
+      display: none;
+      position: absolute;
+      top: 190%;
+      right: 0;
+      width: 550px;
+      background-color: #474747; 
+      color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+      padding: 48px 32px;
+    }
+    
+    .cart-container:hover .cart-menu {
+      display: block;
+    }
+    
+    .cart-menu-title {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 143%;
+      color: #fff;
+    }
+
+    .fs-14 {
+      font-size: 14px !important;
+    }
+
+    .cart-menu-bottom {
+      margin-top: 50px;
+      border-top: 1px solid #7d7d7d;
+      padding-top: 25px ;
+    }
+    
+    .cart-menu-bottom-text {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 122%;
+      color: #fff;
+    }
+
+    .cart-menu-bottom-text span {
+      font-weight: 900;
+    }
+
+    .modal-content {
+      border: 1px solid #7d7d7d;
+      border-radius: 32px;
+      background: #343434;
+      padding: 25px 15px;
+    }
+    
+    .modal-header {
+      border-bottom: none;
+    }
+    
+    .modal-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+    .modal-footer {
+      border-top: none;
+    }
+    
+    .modal.show {
+      backdrop-filter: blur(20px);
+      background: rgba(0, 0, 0, 0.65);
+    }
+    
+    .btn-close {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+
+    #acceptModal .modal-content {
+      background: #00ee9a;
+      border: 1px solid #7d7d7d;
+      padding: 60px 30px;
+    }
+
+    #acceptModal .modal-content .form-title {
+      color: #222221;
+      font-size: 32px;
+
+    }
+  
+    .acceptform-text {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 136%;
+      text-align: center;
+      color: #222221;
+
+    }
+
+    .acceptform-bottom {
+      margin-top: 40px;
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 187%;
+      text-align: center;
+      color: #5a5a5a;
     }
 
 
