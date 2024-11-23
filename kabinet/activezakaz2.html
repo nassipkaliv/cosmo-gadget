@@ -570,7 +570,66 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <div class="modal fade" id="repairModal" tabindex="-1" aria-labelledby="repairModalLabel" aria-hidden="true">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L35 35M35 2L2 35" stroke="#CBCBCB" stroke-width="3" stroke-linecap="round" />
+          </svg>
+      </button>
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="form-title text-center" id="repairModalLabel">Перезвонить вам?</h1>
+          </div>
+          <div class="modal-body">
+              <form id="callbackForm">
+                  <div class="mb-3">
+                    <input type="text" class="form-control" id="nameInput" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="mb-3">
+                    <input type="tel" class="form-control" id="phoneInput" placeholder="Номер телефона" required>
+                  </div>
+                  <button type="submit" class="form-btn w-100">
+                    Заказать звонок
+                  </button>
+                  <div class="form-under-text mt-3">
+                    Отправляя данные, вы соглашаетесь на обработку персональных данных в соответствии с политикой конфиденциальности.
+                  </div>
+                </form>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="acceptModal" tabindex="-1" aria-labelledby="acceptModalLabel" aria-hidden="true">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L35 35M35 2L2 35" stroke="#CBCBCB" stroke-width="3" stroke-linecap="round" />
+          </svg>
+      </button>
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content d-flex flex-column justify-content-center gap-4">
+              <div class="d-flex justify-content-center">
+                  <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L6.75977 14.0889C7.14802 14.5668 7.87175 14.5836 8.28182 14.1244L20 1" stroke="#222221" stroke-width="2" stroke-linecap="round" />
+                  </svg>
+              </div>
+            <h1 class="form-title text-center" id="acceiptModalLabel">Ваша заявка принята!</h1>
+            <div class="acceptform-text text-center">Благодарим вас! Наш специалист свяжется с вами в ближайшее время.</div>
+            <div class="acceptform-bottom d-flex flex-column gap-3">
+              окно автоматически закроется через
+              <div>
+                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21 1C24.9556 1 28.8224 2.17298 32.1114 4.37061C35.4004 6.56824 37.9638 9.69181 39.4776 13.3463C40.9913 17.0009 41.3874 21.0222 40.6157 24.9018C39.844 28.7814 37.9392 32.3451 35.1421 35.1421C32.3451 37.9392 28.7814 39.844 24.9018 40.6157C21.0222 41.3874 17.0009 40.9913 13.3463 39.4776C9.69181 37.9638 6.56824 35.4004 4.37061 32.1114C2.17298 28.8224 1 24.9556 1 21" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                      <path d="M18.1485 27.636V29H10.8665V27.636H13.8365V14.854C13.7045 15.03 13.5065 15.228 13.2425 15.448C12.9932 15.6533 12.6999 15.8587 12.3625 16.064C12.0252 16.2547 11.6805 16.416 11.3285 16.548C10.9765 16.68 10.6539 16.746 10.3605 16.746V15.338C10.7565 15.338 11.1525 15.2353 11.5485 15.03C11.9445 14.81 12.3112 14.568 12.6485 14.304C13.0005 14.0253 13.2792 13.776 13.4845 13.556C13.7045 13.3213 13.8219 13.1967 13.8365 13.182H15.3545V27.636H18.1485ZM26.0484 29.22C24.9924 29.1907 24.0611 28.934 23.2544 28.45C22.4477 27.966 21.7731 27.3353 21.2304 26.558C20.6877 25.766 20.2771 24.9153 19.9984 24.006C19.7197 23.082 19.5804 22.18 19.5804 21.3C19.5804 20.3613 19.7271 19.4227 20.0204 18.484C20.3284 17.5453 20.7611 16.6947 21.3184 15.932C21.8904 15.1547 22.5724 14.5387 23.3644 14.084C24.1564 13.6147 25.0511 13.38 26.0484 13.38C27.1191 13.38 28.0504 13.6293 28.8424 14.128C29.6491 14.6267 30.3237 15.272 30.8664 16.064C31.4091 16.856 31.8124 17.714 32.0764 18.638C32.3551 19.562 32.4944 20.4493 32.4944 21.3C32.4944 22.2533 32.3404 23.1993 32.0324 24.138C31.7391 25.062 31.3137 25.9053 30.7564 26.668C30.1991 27.4307 29.5171 28.0467 28.7104 28.516C27.9184 28.9707 27.0311 29.2053 26.0484 29.22ZM21.1424 21.3C21.1717 22.0627 21.2891 22.8327 21.4944 23.61C21.7144 24.3727 22.0297 25.0767 22.4404 25.722C22.8511 26.3527 23.3497 26.866 23.9364 27.262C24.5377 27.6433 25.2417 27.834 26.0484 27.834C26.8697 27.834 27.5884 27.6287 28.2044 27.218C28.8204 26.8073 29.3264 26.272 29.7224 25.612C30.1331 24.9373 30.4411 24.226 30.6464 23.478C30.8517 22.7153 30.9544 21.9893 30.9544 21.3C30.9544 20.5373 30.8444 19.7747 30.6244 19.012C30.4044 18.2347 30.0817 17.5307 29.6564 16.9C29.2311 16.2547 28.7177 15.7413 28.1164 15.36C27.5151 14.964 26.8257 14.766 26.0484 14.766C25.2124 14.766 24.4864 14.9787 23.8704 15.404C23.2544 15.8147 22.7411 16.35 22.3304 17.01C21.9344 17.67 21.6337 18.3813 21.4284 19.144C21.2377 19.892 21.1424 20.6107 21.1424 21.3Z" fill="white"/>
+                  </svg>  
+              </div>                  
+            </div>
+        </div>
+      </div>
+  </div>
+
+  <footer class="footer">
       <div class="container">
           <div class="row footer-row desktop">
               <div class="col-lg-3">
@@ -666,7 +725,7 @@
                           </div>
                           <div class="footer-contact-right d-flex flex-column justify-content-between">
                               <div>
-                                  <button class="footer-contact-btn">Заказать звонок</button>
+                                  <button class="footer-contact-btn" data-bs-toggle="modal" data-bs-target="#repairModal">Заказать звонок</button>
                               </div>
                               <div>
                                   <a href="#" class="policy-text">Политика конфиденциальности</a>
@@ -754,7 +813,7 @@
                           </div>
                           <div class="footer-contact-right d-flex flex-column justify-content-between">
                               <div>
-                                  <button class="footer-contact-btn">Заказать звонок</button>
+                                  <button class="footer-contact-btn" data-bs-toggle="modal" data-bs-target="#repairModal">Заказать звонок</button>
                               </div>
                           </div>
                       </div>
