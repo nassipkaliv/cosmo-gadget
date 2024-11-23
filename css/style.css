@@ -2935,6 +2935,34 @@ input::-webkit-inner-spin-button {
       .morepages-blocks {
         padding: 40px 20px;
       }
+
+      .kabinetRow {
+        margin-top: 0;
+      }
+
+      .activeZakazBlockRight {
+        flex-direction: column;
+        gap: 10px;
+        width: 35%;
+        align-items: flex-end;
+      }
+
+      .kabinetRight {
+        padding-left: 0;
+      }
+
+      .activeZakazBlock {
+        padding: 25px 10px;
+      }
+
+      .kab-sza {
+        margin-top: 40px;
+      }
+
+      .f-col {
+        flex-direction: column;
+        align-items: start !important;
+      }
     }
 
     @media (max-width: 480px) {
