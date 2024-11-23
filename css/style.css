@@ -2862,6 +2862,10 @@ input::-webkit-inner-spin-button {
       .top2.input_checkbox label span span {
         top: 2px;
       }
+
+      .characterOnlyMob {
+        display: block !important;
+      }
       
     }
 
