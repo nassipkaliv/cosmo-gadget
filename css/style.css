@@ -2577,6 +2577,12 @@ input::-webkit-inner-spin-button {
       display: none;
     }
 
+    .detailGrid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
 
     @media (max-width: 768px) {
 
@@ -2866,7 +2872,45 @@ input::-webkit-inner-spin-button {
       .characterOnlyMob {
         display: block !important;
       }
+
+      .carousel-img {
+        width: 480px;
+        height: 480px;
+      }
       
+      .carousel-bottom-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      .carousel-bottom {
+        left: 0;
+      }
+
+      .imageCarouselRow {
+        gap: 7px !important;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+
+      .tovar-name {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .tovar-crossed-price, .tovar-price {
+        white-space: nowrap;
+      }
+
+      .tovar-details-text {
+        font-size: 17px;
+      }
+
+      .detailGrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }  
     }
 
     @media (max-width: 480px) {

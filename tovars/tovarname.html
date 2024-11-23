@@ -80,7 +80,7 @@
     </header>
 
 
-    <section class="intro">
+    <section class="intro pb-0">
       <div class="container my-4">
         <div class="catalog-nav d-flex align-items-center justify-content-between">
           <div class="dropdown">
@@ -225,6 +225,9 @@
         <div class="container">
             <div class="row">
                 <div class="left-block col-lg-6 col-md-12">
+                    <div class="tovar-name mobile">
+                        Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                    </div>
                     <div class="img-picker">
                       <div id="carouselExample" class="carousel slide">
                         
@@ -251,7 +254,7 @@
                               </svg>
                           </a>
                           
-                          <div class="d-flex gap-3 mt-3">
+                          <div class="d-flex gap-3 mt-3 imageCarouselRow">
                             <div>
                                 <img src="../assets/img/tovar0.png" class="img-thumbnail active carousel-bottom-img" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Image 1" aria-selected="true" onclick="changeActive(0)">
                             </div>
@@ -284,7 +287,7 @@
                     </div>
                 </div>
                 <div class="right-block col-lg-6 col-md-12">
-                    <div class="tovar-name">
+                    <div class="tovar-name desktop">
                         Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
                     </div>
                     <div class="tovar-features">
@@ -319,12 +322,12 @@
                     </div>
                     <div class="tovar-details">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-5">
                                 <div class="tovar-details-text">
                                     Цвет
                                 </div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-7">
                                 <div class="d-flex align-items-center">
                                     <button class="tovar-colour active">
                                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -353,12 +356,12 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mt-3">
+                            <div class="col-5 mt-3">
                                 <div class="tovar-details-text">
                                     Объем накопителя
                                 </div>
                             </div>
-                            <div class="col-lg-8 mt-3">
+                            <div class="col-7 mt-3">
                                 <div class="d-flex align-items-center gap-1">
                                     <button class="detail-btn active">
                                         256 ГБ
@@ -371,12 +374,12 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mt-3">
+                            <div class="col-5 mt-3">
                                 <div class="tovar-details-text">
                                     Оперативная память
                                 </div>
                             </div>
-                            <div class="col-lg-8 mt-3">
+                            <div class="col-7 mt-3">
                                 <div class="d-flex align-items-center gap-1">
                                     <button class="detail-ozu-btn">
                                         8 ГБ
@@ -389,13 +392,13 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mt-3">
+                            <div class="col-5 mt-3">
                                 <div class="tovar-details-text">
                                     Разрешение дисплея
                                 </div>
                             </div>
-                            <div class="col-lg-8 mt-3">
-                                <div class="d-flex align-items-center gap-1">
+                            <div class="col-7 mt-3">
+                                <div class="detailGrid">
                                     <button class="detail-display-btn">
                                         1280 х 960
                                     </button>
@@ -1358,6 +1361,12 @@
             nextEl: '.swiper-button-next', 
             prevEl: '.swiper-button-prev', 
         },
+        breakpoints: {
+            480: {
+                slidesPerView: 1.5,
+                spaceBetween: 30,
+            }
+        }
     });
     </script>
 
@@ -1370,6 +1379,12 @@
         nextEl: '.swiper-button-next2', 
         prevEl: '.swiper-button-prev2', 
     },
+    breakpoints: {
+            480: {
+                slidesPerView: 1.5,
+                spaceBetween: 30,
+            }
+        }
 });
 </script>
 
