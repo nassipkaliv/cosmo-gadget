@@ -2998,13 +2998,39 @@ input::-webkit-inner-spin-button {
       }
 
       .wid-mob-100 {
-        width: 100%;
+        width: 100% !important;
+      }
+
+      .wid-mob-75 {
+        width: 75% !important;
       }
 
       .al-end {
         align-items: flex-end !important;
         gap: 30px;
       }
+
+      .kabinetZakaz {
+        margin-top: 0;
+      }
+
+      .mt-mob-4 {
+        margin-top: 40px !important;
+        margin-bottom: 30px;
+      }
+
+      .mt-mob-10 {
+        margin-top: 70px !important;
+      }
+
+      .nazadBtn, .otmenaBtn {
+        padding: 8px 25px;
+      }
+
+      .breadcrumb-item a, .breadcrumb-item.active {
+        font-size: 15px;
+      }
+      
     }
 
     @media (max-width: 480px) {
