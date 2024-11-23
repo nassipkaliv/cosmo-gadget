@@ -2911,6 +2911,30 @@ input::-webkit-inner-spin-button {
         grid-template-columns: repeat(2, 1fr);
         gap: 8px;
       }  
+
+      .search-container {
+        width: 400px;
+      }
+
+      .morepages-row {
+        flex-direction: column;
+      }
+
+      .morepages-left, .morepages-right {
+        width: 100%;
+      }
+
+      .contactBigText {
+        margin-bottom: 12px;
+      }
+
+      .contactMap {
+        min-width: 248px;
+      }
+
+      .morepages-blocks {
+        padding: 40px 20px;
+      }
     }
 
     @media (max-width: 480px) {
