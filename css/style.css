@@ -211,7 +211,7 @@ section {
 .categories-card-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px; 
+    gap: 25px; 
     margin-top: 30px;
 }
 
@@ -354,7 +354,7 @@ section {
 .services-row {
     display: flex;
     gap: 25px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .services-block {
@@ -413,10 +413,10 @@ section {
 .loyal-title {
     font-family: var(--font-family);
     font-weight: 900;
-    font-size: 66px;
+    font-size: 64px;
     line-height: 114%;
     color: #fff;
-    margin-bottom: 16px;
+    margin-bottom: 25px;
 }
 
 .loyal-text {
@@ -3029,6 +3029,10 @@ input::-webkit-inner-spin-button {
 
       .breadcrumb-item a, .breadcrumb-item.active {
         font-size: 15px;
+      }
+
+      .authTitle {
+        margin-bottom: 25px;
       }
       
     }
