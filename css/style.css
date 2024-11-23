@@ -2859,6 +2859,10 @@ input::-webkit-inner-spin-button {
         min-width: 100vw;
       }
 
+      .top2.input_checkbox label span span {
+        top: 2px;
+      }
+      
     }
 
     @media (max-width: 480px) {
