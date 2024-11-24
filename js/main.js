@@ -190,6 +190,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const editBtn = document.getElementById("editBtn");
   const editableContent = document.getElementById("editableContent");
@@ -202,6 +203,7 @@ document.addEventListener("DOMContentLoaded", () => {
     editBtn.style.display = "none"; 
   });
 });
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const carousel = document.querySelector('#carouselExampleFade');
@@ -253,3 +255,39 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Форма успешно отправлена!');
     }
   });
+  
+
+document.getElementById("d-click").addEventListener("click", function () {
+  const dropdown = document.querySelector(".dropdown");
+  const dropClicks = document.querySelectorAll(".drop-click");
+  const dClick = document.querySelector(".d-click");
+
+  if (window.getComputedStyle(dropdown).display === "none" || dropdown.style.display === "") {
+    dropdown.style.display = "flex"; 
+
+    dropClicks.forEach((dropClick) => {
+      dropClick.style.display = "none";
+    });
+  } else {
+    dropdown.style.display = "none"; 
+    dClick.style.display = "none"; 
+
+    dropClicks.forEach((dropClick) => {
+      dropClick.style.display = "flex";
+    });
+  }
+});
+
+document.getElementById("dropdown-right-back").addEventListener("click", function () {
+  const dropdown = document.querySelector(".dropdown");
+  const dropClicks = document.querySelectorAll(".drop-click");
+  const dClick = document.querySelector(".d-click");
+
+  dropdown.style.display = "none";
+  dropClicks.forEach((dropClick) => {
+    dropClick.style.display = "none"; 
+    dropdown.style.display = "flex";
+  });
+  dClick.style.display = "flex";
+  console.log("Restored to initial state");
+});
