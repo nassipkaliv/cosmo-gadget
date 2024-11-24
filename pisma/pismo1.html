@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body>
+    <table>
+        <!-- Header -->
+        <tr>
+            <td class="pismo-header">
+                <div class="d-flex justify-content-center mb-5">
+                  <img src="../assets/img/Лого.png" alt="Cosmo Gadget Logo" class="img-fluid">
+                </div>
+                <h1 class="noZakaz text-center mb-5">Здравствуйте, Пользователь Иванов!</h1>
+                <p class="pismoHeader-text">Ваш заказ на сайте <br><a href="#">cosmo@example.com</a> <span>оформлен</span></p>
+                <div class="my-5">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_266_5707)">
+                      <circle cx="21" cy="21" r="21" fill="#00EE9A" />
+                    </g>
+                    <path d="M12 20L17.7598 27.0889C18.148 27.5668 18.8717 27.5836 19.2818 27.1244L31 14" stroke="#222221" stroke-width="4" stroke-linecap="round" />
+                    <defs>
+                      <filter id="filter0_d_266_5707" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                        <feOffset dx="2" dy="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.933333 0 0 0 0 0.603922 0 0 0 0.25 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_266_5707" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_266_5707" result="shape" />
+                      </filter>
+                    </defs>
+                  </svg>
+                </div>
+                <p class="noZakaz">№ заказа: <strong class="fw-bolder">099303</strong></p>
+
+                <div class="activeZakazBlock">
+                  <div class="activeZakazBlockRow">
+                    <div class="activeZakazBlockRightText my-3">Содержимое вашего заказа:</div>
+                  </div>
+                  <div class="activeZakazRow">
+                    <div class="zakazTitle">Товары</div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="activeZakazBlockRightText">
+                        Счет №06994232 от 09.08.24
+                      </div>
+                      <div class="activeZakazBlockRightPrice">
+                        140 000 <span>₽</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activeZakazRow lastZakazRow mt-0">
+                    <div class="zakazTitle">Доставка</div>
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="activeZakazBlockRightText">
+                        Курьерская №06994232/2
+                      </div>
+                      <div class="activeZakazBlockRightPrice">
+                        500 <span>₽</span>
+                      </div>
+                    </div>
+                    <div class="activeZakazBlockRightText mt-2 text-start">
+                      Статус доставки: <span>заказ передан курьеру</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between mt-4">
+                    <button class="zakazBtn">
+                      Подробнее о заказе
+                    </button>
+                    <button class="noZakazBtn">
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L14 14M14 1L1 14" stroke="#EC1B4D" stroke-width="2" stroke-linecap="round"></path>
+                      </svg>
+                      Отменить заказ
+                    </button>
+                  </div>
+                </div>
+            </td>
+        </tr>
+        <!-- Content -->
+        <tr>
+            <td class="content">
+                <table class="order-details" width="100%">
+                    <tr>
+                        <td>
+                            <strong>Продукт:</strong> Наушники Monster N-Lite
+                        </td>
+                        <td align="right">2999 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <strong>Продукт:</strong> Кабель для iPhone X
+                        </td>
+                        <td align="right">999 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="total">
+                            Итог: 3998 руб.
+                        </td>
+                    </tr>
+                </table>
+                <div class="cta">
+                    <a href="#">Перейти в личный кабинет</a>
+                </div>
+            </td>
+        </tr>
+        <!-- Footer -->
+        <tr>
+            <td class="pismo-footer">
+                <p>Мы рады, что вы обратились к нам!</p>
+                <p>Доставка будет осуществлена до <strong>15.12.2025</strong></p>
+                <p>Есть вопросы? Позвоните нам: <a href="tel:+79067773302">+7 906 777-33-02</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
