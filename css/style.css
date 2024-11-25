@@ -199,6 +199,7 @@ header {
 
 section {
     padding: 60px 0;
+    padding-top: 0;
 }
 
 .section-title span {
@@ -2842,7 +2843,7 @@ input::-webkit-inner-spin-button {
       }
 
       .catalog-rect {
-        display: none;
+
       }
 
       .d-flex .catalog-nav-links {
