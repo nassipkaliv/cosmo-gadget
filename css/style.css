@@ -3112,6 +3112,16 @@ input::-webkit-inner-spin-button {
         z-index: 1;
         right: 0;
         top: 45%;
+        display: none;
+        opacity: 0; 
+        transform: translateY(20px); 
+        transition: opacity 0.3s ease, transform 0.3s ease; 
+      }
+
+      .filterMenu.active {
+        display: flex;
+        opacity: 1; 
+        transform: translateY(0); 
       }
 
       .character {
@@ -3379,6 +3389,71 @@ input::-webkit-inner-spin-button {
 
       .drop-click {
         display: none;
+      }
+
+      .offcanvas-tovar-filter {
+        display: block;
+      }
+
+     .filter-offcanvas {
+        height: 70% !important;
+        margin-top: auto;
+        margin-right: 15px; 
+        width: 360px !important;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 16px 0 0 16px;
+        background: #343434;
+      }
+
+      .filter-offcanvas-backdrop {
+        background: rgba(34, 34, 33, 0.49);
+      }
+      .filter-filter-button {
+          position: fixed;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+          z-index: 1050;
+      }
+      .filter-offcanvas .offcanvas-body {
+          overflow-y: auto; 
+          max-height: calc(100vh - 56px);
+      }
+
+      .filter-offcanvas-close {
+        position: absolute;
+        top: 20%;
+        right: 100%;
+        z-index: 99;
+        background: transparent;
+        border: none;
+      }
+
+      .filter-offcanvas-filter {
+        position: absolute;
+        top: 34%;
+        right: 100%;
+        z-index: 99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #139b6b;
+        border-left: 1px solid #139b6b;
+        border-top: 1px solid #139b6b;
+        border-radius: 32px 0 0 32px;
+        width: 70px;
+        height: 226px;
+        background: #00ee9a;
+      }
+
+      .filtr-offcanvas-filter-text {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+        color: #222221;
+        transform: rotate(270deg);
+        white-space: nowrap;
       }
     }
 

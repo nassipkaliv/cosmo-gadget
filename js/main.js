@@ -291,3 +291,17 @@ document.getElementById("dropdown-right-back").addEventListener("click", functio
   dClick.style.display = "flex";
   console.log("Restored to initial state");
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const filterMenu = document.querySelector('.filterMenu');
+  const triggerPoint = 300; 
+
+  window.addEventListener('scroll', () => {
+      if (window.scrollY > triggerPoint) {
+          filterMenu.classList.add('active');
+      } else {
+          filterMenu.classList.remove('active');
+      }
+  });
+});

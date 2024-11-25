@@ -10,6 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+      @media (max-width: 768px) {
+      .input_checkbox label span span {
+          top: 3px;
+        }
+      }
+    </style>
+
 </head>
 <body class="position-relative">
 
@@ -289,7 +298,7 @@
       </div>
   </header>
 
-    <div class="filterMenu mobile">
+    <div class="filterMenu mobile" data-bs-toggle="offcanvas" data-bs-target="#filterMenu" aria-controls="filterMenu">
       <svg width="90" height="110" viewBox="0 0 90 110" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_d_320_9316)">
         <mask id="path-1-inside-1_320_9316" fill="white">
@@ -313,6 +322,430 @@
         </defs>
       </svg>        
     </div>
+    
+
+    <div class="offcanvas filter-offcanvas offcanvas-end" tabindex="-1" id="filterMenu" aria-labelledby="filterMenuLabel">
+      <div class="filter-offcanvas-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <mask id="path-1-inside-1_320_10768" fill="white">
+            <path d="M0 35C0 15.67 15.67 0 35 0H70V70H35C15.67 70 0 54.33 0 35Z" />
+          </mask>
+          <path d="M0 35C0 15.67 15.67 0 35 0H70V70H35C15.67 70 0 54.33 0 35Z" fill="#343434" />
+          <path d="M-1 35C-1 15.1177 15.1177 -1 35 -1H70V1H35C16.2223 1 1 16.2223 1 35H-1ZM70 71H35C15.1177 71 -1 54.8823 -1 35H1C1 53.7777 16.2223 69 35 69H70V71ZM35 71C15.1177 71 -1 54.8823 -1 35C-1 15.1177 15.1177 -1 35 -1V1C16.2223 1 1 16.2223 1 35C1 53.7777 16.2223 69 35 69V71ZM70 0V70V0Z" fill="#6F6F6F" mask="url(#path-1-inside-1_320_10768)" />
+          <path d="M30 25L50 45M50 25L30 45" stroke="#EC1B4D" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </div>
+      <button class="filter-offcanvas-filter">
+        <div class="filtr-offcanvas-filter-text">Применить фильтры</div>
+      </button>
+      <div class="offcanvas-body tovar-filter offcanvas-tovar-filter h-100">
+        <div class="dropdown w-100">
+          <a class="filter-dropdown dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            По популярности
+            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.2508 0.788658C12.1711 0.697192 12.0763 0.624593 11.9719 0.57505C11.8674 0.525507 11.7554 0.5 11.6423 0.5C11.5291 0.5 11.4171 0.525507 11.3127 0.57505C11.2082 0.624593 11.1134 0.697192 11.0338 0.788658L7.1085 5.2581C7.02883 5.34956 6.93404 5.42216 6.8296 5.4717C6.72516 5.52125 6.61314 5.54676 6.5 5.54676C6.38686 5.54676 6.27484 5.52125 6.1704 5.4717C6.06596 5.42216 5.97117 5.34956 5.8915 5.2581L1.96623 0.788658C1.88655 0.697192 1.79176 0.624593 1.68732 0.57505C1.58289 0.525507 1.47087 0.5 1.35772 0.5C1.24458 0.5 1.13256 0.525507 1.02813 0.57505C0.923686 0.624593 0.828896 0.697192 0.749222 0.788658C0.589597 0.971497 0.5 1.21883 0.5 1.47664C0.5 1.73445 0.589597 1.98178 0.749222 2.16462L4.68306 6.64382C5.16515 7.19206 5.81865 7.5 6.5 7.5C7.18135 7.5 7.83485 7.19206 8.31694 6.64382L12.2508 2.16462C12.4104 1.98178 12.5 1.73445 12.5 1.47664C12.5 1.21883 12.4104 0.971497 12.2508 0.788658Z" fill="#222221"></path>
+            </svg>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Самый популярный</a></li>
+            <li><a class="dropdown-item" href="#">Самый популярный</a></li>
+            <li><a class="dropdown-item" href="#">Самый популярный</a></li>
+          </ul>
+        </div>
+        <div class="dropdown w-100 my-3">
+          <a class="filter-dropdown dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Бренд
+            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.2508 0.788658C12.1711 0.697192 12.0763 0.624593 11.9719 0.57505C11.8674 0.525507 11.7554 0.5 11.6423 0.5C11.5291 0.5 11.4171 0.525507 11.3127 0.57505C11.2082 0.624593 11.1134 0.697192 11.0338 0.788658L7.1085 5.2581C7.02883 5.34956 6.93404 5.42216 6.8296 5.4717C6.72516 5.52125 6.61314 5.54676 6.5 5.54676C6.38686 5.54676 6.27484 5.52125 6.1704 5.4717C6.06596 5.42216 5.97117 5.34956 5.8915 5.2581L1.96623 0.788658C1.88655 0.697192 1.79176 0.624593 1.68732 0.57505C1.58289 0.525507 1.47087 0.5 1.35772 0.5C1.24458 0.5 1.13256 0.525507 1.02813 0.57505C0.923686 0.624593 0.828896 0.697192 0.749222 0.788658C0.589597 0.971497 0.5 1.21883 0.5 1.47664C0.5 1.73445 0.589597 1.98178 0.749222 2.16462L4.68306 6.64382C5.16515 7.19206 5.81865 7.5 6.5 7.5C7.18135 7.5 7.83485 7.19206 8.31694 6.64382L12.2508 2.16462C12.4104 1.98178 12.5 1.73445 12.5 1.47664C12.5 1.21883 12.4104 0.971497 12.2508 0.788658Z" fill="#222221"></path>
+            </svg>
+          </a>
+          
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Бренд 1</a></li>
+            <li><a class="dropdown-item" href="#">Бренд 2</a></li>
+            <li><a class="dropdown-item" href="#">Бренд 3</a></li>
+          </ul>
+        </div>
+        
+        <div class="dropdown w-100">
+          <a class="filter-dropdown dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Наличие
+            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.2508 0.788658C12.1711 0.697192 12.0763 0.624593 11.9719 0.57505C11.8674 0.525507 11.7554 0.5 11.6423 0.5C11.5291 0.5 11.4171 0.525507 11.3127 0.57505C11.2082 0.624593 11.1134 0.697192 11.0338 0.788658L7.1085 5.2581C7.02883 5.34956 6.93404 5.42216 6.8296 5.4717C6.72516 5.52125 6.61314 5.54676 6.5 5.54676C6.38686 5.54676 6.27484 5.52125 6.1704 5.4717C6.06596 5.42216 5.97117 5.34956 5.8915 5.2581L1.96623 0.788658C1.88655 0.697192 1.79176 0.624593 1.68732 0.57505C1.58289 0.525507 1.47087 0.5 1.35772 0.5C1.24458 0.5 1.13256 0.525507 1.02813 0.57505C0.923686 0.624593 0.828896 0.697192 0.749222 0.788658C0.589597 0.971497 0.5 1.21883 0.5 1.47664C0.5 1.73445 0.589597 1.98178 0.749222 2.16462L4.68306 6.64382C5.16515 7.19206 5.81865 7.5 6.5 7.5C7.18135 7.5 7.83485 7.19206 8.31694 6.64382L12.2508 2.16462C12.4104 1.98178 12.5 1.73445 12.5 1.47664C12.5 1.21883 12.4104 0.971497 12.2508 0.788658Z" fill="#222221"></path>
+            </svg>
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">В наличии</a></li>
+            <li><a class="dropdown-item" href="#">Нет в наличии</a></li>
+            <li><a class="dropdown-item" href="#">Ожидается</a></li>
+          </ul>
+        </div>
+        
+        <div class="feature-text mt-4 mb-3">
+          Цена, руб:
+        </div>
+        <div id="slider" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%, 0px) scale(0.833333, 1);"></div></div><div class="noUi-origin" style="transform: translate(-1000%, 0px); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="2500.0" aria-valuenow="0.0" aria-valuetext="0.00"><div class="noUi-touch-area"></div></div></div><div class="noUi-origin" style="transform: translate(-166.667%, 0px); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="3000.0" aria-valuenow="2500.0" aria-valuetext="2500.00"><div class="noUi-touch-area"></div></div></div></div></div>
+
+        <div class="d-flex align-items-center gap-2 mt-4 mb-4">
+          <div id="minValue" class="slider-button w-100">от 0</div>
+          <div id="maxValue" class="slider-button w-100">до 2500</div>
+        </div>
+
+        <div class="dropItem">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Модель
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                Модель 1
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                Модель 2
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                Модель 3
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="dropItem mt-3">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Цвет
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                Цвет 1
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                Цвет 2
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                Цвет 3
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="dropItem mt-3">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Разъемы
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                USB-C
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                Lightning
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="dropItem mt-3">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Встроенная память
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      32 ГБ
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      64 ГБ
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      128 ГБ
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      256 ГБ
+                  </span>
+              </label>
+          </div>
+          <div class="additionalOptions">
+              <div class="input_checkbox mb-2">
+                  <label class="dropLabel">
+                      <input type="checkbox" name="agree">
+                      <span>
+                          <span></span>
+                          512 ГБ
+                      </span>
+                  </label>
+              </div>
+              <div class="input_checkbox mb-2">
+                  <label class="dropLabel">
+                      <input type="checkbox" name="agree">
+                      <span>
+                          <span></span>
+                          1 ТБ
+                      </span>
+                  </label>
+              </div>
+              <div class="input_checkbox mb-2">
+                  <label class="dropLabel">
+                      <input type="checkbox" name="agree">
+                      <span>
+                          <span></span>
+                          2 ТБ
+                      </span>
+                  </label>
+              </div>
+          </div>
+          <a href="javascript:void(0);" class="dropShowMore">
+            Показать еще (3)
+          </a>
+        </div>
+
+        <div class="dropItem mt-3">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Диагональ
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      6.1 дюйм
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      6.2 дюйм
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      6.4 дюйм
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      6.5 дюйм
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      7.1 дюйм
+                  </span>
+              </label>
+          </div>
+          <div class="input_checkbox mb-2">
+              <label class="dropLabel">
+                  <input type="checkbox" name="agree">
+                  <span>
+                      <span></span>
+                      7.3 дюйм
+                  </span>
+              </label>
+          </div>
+          <a href="javascript:void(0);" class="dropShowLess">
+              Свернуть
+          </a>
+        </div>
+
+        <div class="dropItem mt-3">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Количество SIM-карт
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                1
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                2
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                0
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="dropItem mt-3">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Фотокамера
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                1
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                2
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                0
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <div class="dropItem mt-3">
+          <svg class="arrow-icon" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.288657 0.249224C0.197191 0.328897 0.124593 0.423687 0.0750497 0.528126C0.0255065 0.632565 -4.9199e-07 0.744586 -4.87044e-07 0.857726C-4.82099e-07 0.970866 0.0255066 1.08289 0.0750497 1.18733C0.124593 1.29176 0.197191 1.38655 0.288657 1.46623L4.7581 5.3915C4.84956 5.47117 4.92216 5.56596 4.9717 5.6704C5.02125 5.77484 5.04676 5.88686 5.04676 6C5.04676 6.11314 5.02125 6.22516 4.9717 6.3296C4.92216 6.43404 4.84956 6.52883 4.7581 6.6085L0.288658 10.5338C0.197192 10.6134 0.124593 10.7082 0.0750501 10.8127C0.025507 10.9171 -4.24379e-08 11.0291 -3.74923e-08 11.1423C-3.25468e-08 11.2554 0.025507 11.3674 0.0750502 11.4719C0.124593 11.5763 0.197192 11.6711 0.288658 11.7508C0.471497 11.9104 0.718831 12 0.976639 12C1.23445 12 1.48178 11.9104 1.66462 11.7508L6.14382 7.81694C6.69206 7.33485 7 6.68135 7 6C7 5.31865 6.69206 4.66515 6.14382 4.18306L1.66462 0.249224C1.48178 0.0895986 1.23445 -5.39594e-08 0.976639 -4.26903e-08C0.71883 -3.14211e-08 0.471497 0.0895986 0.288657 0.249224Z" fill="white"></path>
+          </svg>
+          Операционная система
+        </div>
+        <div class="dropContent">
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                1
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                2
+              </span>
+            </label>
+          </div>
+          <div class="input_checkbox mb-2">
+            <label class="dropLabel">
+              <input type="checkbox" name="agree">
+              <span>
+                <span></span>
+                0
+              </span>
+            </label>
+          </div>
+        </div>
+                  
+      </div>
+    </div>
+  
 
     <section class="intro">
       <div class="container my-4">
