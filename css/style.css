@@ -2819,6 +2819,10 @@ input::-webkit-inner-spin-button {
         text-decoration: none;
     }
 
+    .color-blue {
+      color: #00eeda !important;
+    }
+
 
     @media (max-width: 768px) {
 
