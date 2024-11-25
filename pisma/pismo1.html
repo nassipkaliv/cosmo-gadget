@@ -5,9 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css"> 
+
+    <style>
+            
+      .izbrannoe-title {
+        font-size: 14px;
+        text-align: start;
+        margin-top: 0;
+      }
+
+      .izbrannoe-text {
+        font-size: 12px;
+        text-align: start;
+        margin-top: 0;
+      }
+
+      .activeZakazBlockRight {
+        width: 55%;
+      }
+      
+      .activeZakazBlockRightText, .activeZakazBlockRightPrice {
+        font-size: 14px;
+      }
+
+      .activeZakazRow {
+        margin-top: 0;
+        padding: 15px 0;
+      }
+
+      .last-izbrannoe-item {
+        border-bottom: 1px solid #bfbfbf;
+      }
+
+      .order-details {
+        margin-top: 40px;
+        background: #343434;
+        border-radius: 24px;
+        border-radius: 24px;
+        width: 436px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .order-details-title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 111%;
+        text-align: center;
+        color: #00ee9a;
+        margin-bottom: 35px;
+      }
+
+      .order-details-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 111%;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .pismoFooter-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        text-align: center;
+        color: #fff;
+      }
+
+      .pismoFooter-contact {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 117%;
+        text-align: center;
+        color: #00ee9a;
+      }
+
+    </style>
+
 </head>
-<body>
-    <table>
+<body class="py-4">
+    <table class="pismo-table">
         <!-- Header -->
         <tr>
             <td class="pismo-header">
@@ -37,79 +122,147 @@
                 </div>
                 <p class="noZakaz">№ заказа: <strong class="fw-bolder">099303</strong></p>
 
-                <div class="activeZakazBlock">
+                <div class="activeZakazBlock mt-5">
                   <div class="activeZakazBlockRow">
                     <div class="activeZakazBlockRightText my-3">Содержимое вашего заказа:</div>
                   </div>
-                  <div class="zakazTovarRow d-flex align-items-center justify-content-between">
-                    <div class="d-flex align-items-center gap-3">
-                      <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
-                      <div class="izbrannoe-text-content pe-4">
-                        <div class="izbrannoe-title color-b">
-                          Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                  <div class="activeZakazRow">
+                    <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img" width="70" height="70">
+                        <div class="izbrannoe-text-content pe-4">
+                          <div class="izbrannoe-title color-b">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                          <div class="izbrannoe-text">
+                            арт: 0054938012
+                          </div>
                         </div>
-                        <div class="izbrannoe-text">
-                          арт: 0054938012
+                      </div>
+                      <div class="activeZakazBlockRight">
+                        <div class="activeZakazBlockRightText сolor-7">
+                          1 шт.
+                        </div>
+                        <div class="activeZakazBlockRightPrice">
+                          240 999 <span>₽</span>
                         </div>
                       </div>
                     </div>
-                    <div class="activeZakazBlockRight">
-                      <div class="activeZakazBlockRightText сolor-7">
-                        1 шт.
+                  </div>
+                  <div class="activeZakazRow">
+                    <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img" width="70" height="70">
+                        <div class="izbrannoe-text-content pe-4">
+                          <div class="izbrannoe-title color-b">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                          <div class="izbrannoe-text">
+                            арт: 0054938012
+                          </div>
+                        </div>
                       </div>
+                      <div class="activeZakazBlockRight">
+                        <div class="activeZakazBlockRightText сolor-7">
+                          1 шт.
+                        </div>
+                        <div class="activeZakazBlockRightPrice">
+                          240 999 <span>₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activeZakazRow">
+                    <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center gap-3">
+                        <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img" width="70" height="70">
+                        <div class="izbrannoe-text-content pe-4">
+                          <div class="izbrannoe-title color-b">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                          <div class="izbrannoe-text">
+                            арт: 0054938012
+                          </div>
+                        </div>
+                      </div>
+                      <div class="activeZakazBlockRight">
+                        <div class="activeZakazBlockRightText сolor-7">
+                          1 шт.
+                        </div>
+                        <div class="activeZakazBlockRightPrice">
+                          240 999 <span>₽</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="activeZakazRow last-izbrannoe-item">
+                    <div class="zakazTovarRow d-flex align-items-center justify-content-between">
+                      <div class="activeZakazBlockRightText my-3">Итого оплачено:</div>
                       <div class="activeZakazBlockRightPrice">
-                        240 999 <span>₽</span>
+                        640 999 <span>₽</span>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex align-items-center justify-content-between mt-4">
+                  <div class="d-flex align-items-center justify-content-center mt-5">
                     <button class="zakazBtn">
-                      Подробнее о заказе
-                    </button>
-                    <button class="noZakazBtn">
-                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L14 14M14 1L1 14" stroke="#EC1B4D" stroke-width="2" stroke-linecap="round"></path>
-                      </svg>
-                      Отменить заказ
+                      Перейти в личный кабинет
                     </button>
                   </div>
-                </div>
-            </td>
-        </tr>
-        <!-- Content -->
-        <tr>
-            <td class="content">
-                <table class="order-details" width="100%">
-                    <tr>
-                        <td>
-                            <strong>Продукт:</strong> Наушники Monster N-Lite
-                        </td>
-                        <td align="right">2999 руб.</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <strong>Продукт:</strong> Кабель для iPhone X
-                        </td>
-                        <td align="right">999 руб.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="total">
-                            Итог: 3998 руб.
-                        </td>
-                    </tr>
-                </table>
-                <div class="cta">
-                    <a href="#">Перейти в личный кабинет</a>
                 </div>
             </td>
         </tr>
         <!-- Footer -->
         <tr>
             <td class="pismo-footer">
-                <p>Мы рады, что вы обратились к нам!</p>
-                <p>Доставка будет осуществлена до <strong>15.12.2025</strong></p>
-                <p>Есть вопросы? Позвоните нам: <a href="tel:+79067773302">+7 906 777-33-02</a></p>
+                <h1 class="pismoHeader-text mt-5">Мы рады, что вы обратились к нам!</h1>
+                <div class="d-flex justify-content-center my-5">
+                  <svg width="130" height="62" viewBox="0 0 130 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_266_5702)">
+                      <path d="M64.9273 61.8562C82.0598 61.8562 95.9484 48.0092 95.9484 30.9281C95.9484 13.847 82.0598 0 64.9273 0C47.7949 0 33.9062 13.847 33.9062 30.9281C33.9062 48.0092 47.7949 61.8562 64.9273 61.8562Z" fill="#0F9566" />
+                      <path d="M61.7534 0.143852C60.7434 0.287703 59.8777 0.431554 58.8677 0.575406C58.7234 0.575406 58.7234 0.575406 58.5791 0.575406C57.7134 0.719258 56.8477 1.00696 55.982 1.29466C55.8377 1.29466 55.6934 1.43852 55.5492 1.43852C54.6835 1.72622 53.962 2.01392 53.2406 2.30162C53.0963 2.44548 52.8078 2.44548 52.6635 2.58933C51.9421 2.87703 51.2206 3.16473 50.6435 3.59629C50.3549 3.74014 50.2106 3.88399 49.9221 4.02784C49.3449 4.31555 48.7678 4.7471 48.0464 5.17865C47.7578 5.32251 47.4693 5.61021 47.1807 5.75406C46.6035 6.18561 46.1707 6.47332 45.5936 6.90487C45.305 7.19258 45.0164 7.33643 44.7279 7.62413C44.295 8.05569 43.8621 8.34339 43.4293 8.77494C43.1407 9.06264 42.8522 9.35035 42.5636 9.63805C45.7378 11.2204 48.6235 13.2343 50.0664 14.3852C55.4049 18.413 58.2906 18.9884 65.0719 18.9884C71.2761 18.9884 74.0175 21.8654 78.2018 25.4617C78.2018 25.4617 87.0031 35.5313 76.9032 37.4014C66.8033 39.1276 65.0719 28.7703 56.2706 32.0789C49.2007 34.6682 42.9964 42.8678 36.3594 43.2993C38.9565 49.6288 43.7179 54.8074 49.6335 58.116C55.1163 53.8005 59.3006 47.1833 74.1618 51.6427C78.6346 52.9374 82.5303 53.8005 85.9931 54.0882C92.1973 48.478 96.093 40.2784 96.093 31.2158C96.093 27.1879 95.3716 23.4478 93.9287 19.9954C91.4759 13.6659 87.0031 8.48724 81.376 4.89095C81.0875 4.7471 80.7989 4.60325 80.6546 4.4594C80.2217 4.17169 79.7889 4.02784 79.356 3.74014C78.6346 3.16473 78.3461 3.02088 77.9132 2.87703C77.4804 2.73318 77.1918 2.44548 76.7589 2.30162C76.0375 2.01392 75.1718 1.72622 74.3061 1.43852C74.0175 1.29466 73.8732 1.29466 73.5847 1.29466C72.8633 1.15081 72.2861 0.863109 71.5647 0.719258C71.2761 0.719258 70.9876 0.575406 70.5547 0.575406C69.9776 0.431554 69.2562 0.287703 68.5347 0.287703C68.2462 0.287703 67.9576 0.143852 67.669 0.143852C66.9476 0 65.9376 0 64.9276 0C63.9176 0 62.9077 0 61.7534 0.143852Z" fill="#00EE9A" />
+                      <path d="M129.854 8.91879C128.123 4.31554 111.53 5.61021 89.0216 11.3643C89.8873 12.3712 90.6088 13.522 91.4745 14.8167C103.017 11.9397 110.809 10.9327 111.386 12.5151C112.396 15.3921 92.0516 25.0302 65.9362 34.0928C39.8207 43.1555 17.8896 48.0464 16.8796 45.1694C16.3024 43.4432 23.0838 39.4153 34.1937 34.5244C34.0494 33.3735 34.0494 32.2227 34.0494 31.0719C34.0494 30.9281 34.0494 30.6404 34.0494 30.4965C18.7553 35.819 -1.5888 48.9095 0.142608 53.8005C2.30687 60.2738 33.1837 55.3828 69.1104 43.0116C105.037 30.6404 132.018 15.3921 129.854 8.91879Z" fill="#EBEBEB" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_266_5702">
+                        <rect width="130" height="62" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <div class="order-details">
+                    <p class="order-details-title">Заказ будет доставлен вовремя</p>
+                    <p class="order-details-text">Ожидаемая дата доставки:<strong> 15.12.2025</strong></p>
+                    <p class="order-details-text">Способ доставки:<strong> курьерская</strong></p>
+                  </div>
+                </div>
             </td>
+
+            <tr class="">
+              <td>
+                <h1 class="pismoHeader-text mt-5">У вас есть вопрос?<br>Возникла проблема с заказом?</h1>
+                <p class="pismoFooter-text mt-5">
+                  Готовы помочь вам немедленно. <br> Звоните или пишите в WhatsApp:
+                </p>
+                <div class="d-flex justify-content-center mt-4">
+                  <div class="d-flex align-items-center gap-3">
+                    <div>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.1655 9.16613C18.9441 9.16613 18.7318 9.07836 18.5753 8.92211C18.4188 8.76586 18.3309 8.55395 18.3309 8.33298C18.3291 6.5658 17.6252 4.8715 16.3735 3.62191C15.1218 2.37233 13.4247 1.66953 11.6545 1.66777C11.4332 1.66777 11.2209 1.57999 11.0644 1.42375C10.9079 1.2675 10.82 1.05558 10.82 0.834618C10.82 0.613652 10.9079 0.401737 11.0644 0.245491C11.2209 0.0892443 11.4332 0.00146607 11.6545 0.00146607C13.8672 0.00389187 15.9884 0.882453 17.553 2.44439C19.1175 4.00633 19.9976 6.12407 20 8.33298C20 8.55395 19.9121 8.76586 19.7556 8.92211C19.5991 9.07836 19.3868 9.16613 19.1655 9.16613ZM16.6618 8.33298C16.6618 7.00719 16.1343 5.7357 15.1952 4.79822C14.2562 3.86074 12.9826 3.33407 11.6545 3.33407C11.4332 3.33407 11.2209 3.42185 11.0644 3.5781C10.9079 3.73434 10.82 3.94626 10.82 4.16722C10.82 4.38819 10.9079 4.60011 11.0644 4.75635C11.2209 4.9126 11.4332 5.00038 11.6545 5.00038C12.5399 5.00038 13.389 5.35149 14.015 5.97647C14.641 6.60146 14.9927 7.44912 14.9927 8.33298C14.9927 8.55395 15.0807 8.76586 15.2372 8.92211C15.3937 9.07836 15.6059 9.16613 15.8273 9.16613C16.0486 9.16613 16.2609 9.07836 16.4174 8.92211C16.5739 8.76586 16.6618 8.55395 16.6618 8.33298ZM18.4836 18.4674L19.2431 17.5935C19.7264 17.1093 19.9979 16.4537 19.9979 15.7701C19.9979 15.0866 19.7264 14.4309 19.2431 13.9468C19.2172 13.9209 17.2093 12.3788 17.2093 12.3788C16.7274 11.9208 16.0873 11.6658 15.4219 11.6667C14.7566 11.6677 14.1172 11.9245 13.6366 12.3838L12.0459 13.7218C10.7475 13.1853 9.56808 12.3981 8.57531 11.4052C7.58253 10.4124 6.796 9.23357 6.26088 7.9364L7.59615 6.35341C8.05658 5.87366 8.31411 5.23522 8.3152 4.57081C8.31628 3.90639 8.06085 3.26711 7.60199 2.78586C7.60199 2.78586 6.05558 0.783795 6.02971 0.757968C5.55356 0.279529 4.90798 0.00731647 4.23245 0.000145342C3.55693 -0.00702579 2.90569 0.25142 2.41946 0.719643L1.45974 1.55279C-4.21017 8.1197 7.99923 20.2146 14.7941 19.9971C15.4803 20.0011 16.1602 19.8678 16.7939 19.605C17.4276 19.3423 18.0022 18.9555 18.4836 18.4674Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0869 2.90667C15.2062 1.03333 12.7059 0.000833333 10.0423 0C4.55349 0 0.0862466 4.445 0.0837346 9.91C0.0828972 11.6567 0.541763 13.3617 1.41344 14.865L0 20L5.27863 18.6217C6.7331 19.4117 8.37094 19.8275 10.0373 19.8283H10.0414C15.5294 19.8283 19.9975 15.3825 20 9.9175C20.0017 7.27 18.9667 4.77917 17.0869 2.90667ZM10.0423 18.1542H10.0389C8.55348 18.1542 7.09734 17.7567 5.82625 17.0058L5.52397 16.8275L2.39146 17.645L3.22797 14.605L3.03119 14.2933C2.20222 12.9817 1.76512 11.4658 1.76596 9.91C1.76764 5.36833 5.48126 1.67333 10.0465 1.67333C12.2571 1.67333 14.3354 2.53167 15.8978 4.08833C17.4603 5.64583 18.3203 7.715 18.3194 9.91583C18.3169 14.4592 14.6041 18.1542 10.0423 18.1542ZM14.5824 11.985C14.3337 11.8608 13.1103 11.2617 12.8817 11.1792C12.654 11.0967 12.4882 11.055 12.3215 11.3025C12.1549 11.55 11.6793 12.1083 11.5336 12.2742C11.3887 12.4392 11.243 12.46 10.9943 12.3358C10.7457 12.2117 9.94348 11.9508 8.99309 11.1067C8.25371 10.45 7.75382 9.63917 7.60896 9.39083C7.4641 9.1425 7.59389 9.00917 7.71781 8.88583C7.83002 8.775 7.96651 8.59667 8.09127 8.45167C8.21687 8.30833 8.2579 8.205 8.34164 8.03917C8.42453 7.87417 8.3835 7.72917 8.3207 7.605C8.2579 7.48167 7.76052 6.2625 7.55369 5.76667C7.35189 5.28333 7.14674 5.34917 6.99351 5.34167C6.84865 5.33417 6.68285 5.33333 6.51622 5.33333C6.35043 5.33333 6.0808 5.395 5.85304 5.64333C5.62529 5.89167 4.98221 6.49083 4.98221 7.70917C4.98221 8.92833 5.87398 10.1058 5.99791 10.2708C6.12183 10.4358 7.75214 12.9375 10.2483 14.01C10.8419 14.265 11.3058 14.4175 11.6667 14.5317C12.2629 14.72 12.8055 14.6933 13.2342 14.63C13.7124 14.5592 14.7063 14.0308 14.914 13.4525C15.1216 12.8742 15.1216 12.3775 15.0588 12.275C14.9969 12.1708 14.8311 12.1092 14.5824 11.985Z" fill="white" />
+                      </svg>
+                    </div>
+                    <p class="pismoFooter-contact mb-0">
+                      +7 905 771-36-02
+                    </p>
+                  </div>
+                </div>
+              </td>
+            </tr>
         </tr>
     </table>
 </body>
