@@ -2099,6 +2099,10 @@ input::-webkit-inner-spin-button {
     height: 45px;
   }
 
+  .h-50px {
+    height: 50px !important;
+  }
+
   .noZakazBtn {
     background: transparent;
     border-radius: 99px;
@@ -2821,6 +2825,14 @@ input::-webkit-inner-spin-button {
 
     .color-blue {
       color: #00eeda !important;
+    }
+
+    .tovar-popup-title {
+      font-family: var(--font-family);
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 136%;
+      color: #fff;
     }
 
 

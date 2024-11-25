@@ -543,7 +543,7 @@
                                         <path d="M23.0396 9C22.0078 9.0166 20.9985 9.31461 20.1137 9.86393C19.2288 10.4132 18.4997 11.1944 18 12.1286C17.5003 11.1944 16.7712 10.4132 15.8863 9.86393C15.0015 9.31461 13.9922 9.0166 12.9604 9C11.3156 9.07394 9.76589 9.8184 8.64991 11.0708C7.53393 12.3231 6.94236 13.9815 7.00444 15.6837C7.00444 19.9945 11.3898 24.7025 15.0678 27.8946C15.8891 28.6086 16.9273 29 18 29C19.0727 29 20.1109 28.6086 20.9321 27.8946C24.6102 24.7025 28.9956 19.9945 28.9956 15.6837C29.0576 13.9815 28.4661 12.3231 27.3501 11.0708C26.2341 9.8184 24.6844 9.07394 23.0396 9ZM19.7547 26.444C19.2636 26.872 18.6421 27.1066 18 27.1066C17.3579 27.1066 16.7364 26.872 16.2453 26.444C11.5374 22.357 8.83703 18.4359 8.83703 15.6837C8.77439 14.4842 9.17273 13.3077 9.94517 12.4108C10.7176 11.5139 11.8015 10.9694 12.9604 10.8961C14.1193 10.9694 15.2031 11.5139 15.9756 12.4108C16.748 13.3077 17.1463 14.4842 17.0837 15.6837C17.0837 15.9352 17.1802 16.1763 17.3521 16.3541C17.5239 16.5319 17.757 16.6318 18 16.6318C18.243 16.6318 18.4761 16.5319 18.6479 16.3541C18.8198 16.1763 18.9163 15.9352 18.9163 15.6837C18.8537 14.4842 19.252 13.3077 20.0244 12.4108C20.7969 11.5139 21.8807 10.9694 23.0396 10.8961C24.1985 10.9694 25.2824 11.5139 26.0548 12.4108C26.8273 13.3077 27.2256 14.4842 27.163 15.6837C27.163 18.4359 24.4626 22.357 19.7547 26.4403V26.444Z" fill="#EC1B4D" />
                                     </svg>
                                 </button>
-                                <button class="border-0 bg-transparent">
+                                <button class="border-0 bg-transparent" data-bs-toggle="modal" data-bs-target="#sravnenyaModal">
                                     <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="18" cy="18" r="17" stroke="#7D7D7D" stroke-width="2" />
                                         <path d="M13 18C13 17.4477 12.5523 17 12 17C11.4477 17 11 17.4477 11 18L13 18ZM13 25L13 18L11 18L11 25L13 25Z" fill="#7D7D7D" />
@@ -647,7 +647,7 @@
                         </div>
                     </div>
                     <div class="tovar-buttons">
-                        <button class="korzina-btn">
+                        <button class="korzina-btn" data-bs-toggle="modal" data-bs-target="#cartModal">
                             В корзину
                             <div class="ms-3">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -657,7 +657,7 @@
                                 </svg>
                             </div>
                         </button>
-                        <button class="one-click-btn">
+                        <button class="one-click-btn" data-bs-toggle="modal" data-bs-target="#oneclickModal">
                             Купить в 1 клик
                         </button>
                     </div>
@@ -1344,6 +1344,100 @@
           </div>          
     </section>
 
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L35 35M35 2L2 35" stroke="#CBCBCB" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="tovar-popup-title text-center" id="cartModalLabel">Товар добавлен в корзину</h1>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="izbrannoe-item flex-column border-0 mt-0">
+                    <div class="row gap-2">
+                      <div class="izbrannoe-item-first col-3">
+                        <div class="izbrannoe-img">
+                          <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
+                        </div>
+            
+                      </div>
+                      <div class="izbrannoe-item-second col-8 flex-column align-items-start py-2 pe-0">
+                        <div class="izbrannoe-text-content">
+                          <div class="izbrannoe-title">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between w-75">
+                            <div class="izbrannoe-price">
+                                240 999 <span>₽</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 w-100 mt-5">
+                        <button class="zakazBtn w-100 h-50px">
+                            Продолжить покупки
+                        </button>
+                        <button class="izbrannoe-btn w-100">
+                            Перейти в корзину
+                      </button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="oneclickModal" tabindex="-1" aria-labelledby="oneclickModalLabel" aria-hidden="true">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L35 35M35 2L2 35" stroke="#CBCBCB" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="tovar-popup-title text-center" id="oneclickModalLabel">Купить в один клик</h1>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="izbrannoe-item flex-column border-0 mt-0">
+                    <div class="row gap-2">
+                      <div class="izbrannoe-item-first col-3">
+                        <div class="izbrannoe-img">
+                          <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
+                        </div>
+            
+                      </div>
+                      <div class="izbrannoe-item-second col-8 flex-column align-items-start py-2 pe-0">
+                        <div class="izbrannoe-text-content">
+                          <div class="izbrannoe-title">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between w-75">
+                            <div class="izbrannoe-price">
+                                240 999 <span>₽</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 w-100 mt-5">
+                        <div class="form-group w-100">
+                            <input type="tel" class="form-control" placeholder="Ваш телефон">
+                        </div>
+                        <button class="izbrannoe-btn w-75">
+                            Купить сейчас
+                      </button>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <div class="modal fade" id="repairModal" tabindex="-1" aria-labelledby="repairModalLabel" aria-hidden="true">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1370,6 +1464,53 @@
                       Отправляя данные, вы соглашаетесь на обработку персональных данных в соответствии с политикой конфиденциальности.
                     </div>
                   </form>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="sravnenyaModal" tabindex="-1" aria-labelledby="sravnenyaModalLabel" aria-hidden="true">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 2L35 35M35 2L2 35" stroke="#CBCBCB" stroke-width="3" stroke-linecap="round" />
+            </svg>
+        </button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="tovar-popup-title text-center" id="sravnenyaModalLabel">Товар добавлен в сравнение</h1>
+            </div>
+            <div class="modal-body pt-0">
+                <div class="izbrannoe-item flex-column border-0 mt-0">
+                    <div class="row gap-2">
+                      <div class="izbrannoe-item-first col-3">
+                        <div class="izbrannoe-img">
+                          <img src="../assets/img/izbrannoeimg1.png" alt="izbrannoe-img">
+                        </div>
+            
+                      </div>
+                      <div class="izbrannoe-item-second col-8 flex-column align-items-start py-2 pe-0">
+                        <div class="izbrannoe-text-content">
+                          <div class="izbrannoe-title">
+                            Ноутбук Apple MacBook Air 15″ (M2, 16 Gb, 1 Tb SSD) Темно-синий
+                          </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between w-75">
+                            <div class="izbrannoe-price">
+                                240 999 <span>₽</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between gap-2 w-100 mt-5">
+                        <button class="zakazBtn w-100 h-50px">
+                            Продолжить покупки
+                        </button>
+                        <button class="izbrannoe-btn w-100">
+                            Сравнить товары (6)
+                      </button>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
