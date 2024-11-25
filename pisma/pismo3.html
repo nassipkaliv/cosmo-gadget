@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css"> 
+
+    <style>
+
+            
+      .izbrannoe-title {
+        font-size: 14px;
+        text-align: start;
+        margin-top: 0;
+      }
+
+      .izbrannoe-text {
+        font-size: 12px;
+        text-align: start;
+        margin-top: 0;
+      }
+
+      .activeZakazBlockRight {
+        width: 55%;
+      }
+      
+      .activeZakazBlockRightText, .activeZakazBlockRightPrice {
+        font-size: 14px;
+      }
+
+      .activeZakazRow {
+        margin-top: 0;
+        padding: 15px 0;
+      }
+
+      .last-izbrannoe-item {
+        border-bottom: 1px solid #bfbfbf;
+      }
+
+      .order-details {
+        margin-top: 40px;
+        background: #343434;
+        border-radius: 24px;
+        border-radius: 24px;
+        width: 436px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .order-details-title {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 111%;
+        text-align: center;
+        color: #00ee9a;
+        margin-bottom: 35px;
+      }
+
+      .order-details-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 111%;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .pismoFooter-text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        text-align: center;
+        color: #fff;
+      }
+
+      .pismoFooter-contact {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 117%;
+        text-align: center;
+        color: #00ee9a;
+      }
+
+      .pismoTableTitle {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #222221;
+      }
+
+      .pismoAdress {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        text-align: center;
+        color: #222221;
+      }
+
+      .color-black {
+        color: #222221;
+      }
+
+      .color-black span {
+        font-weight: 600;
+      }
+
+      .pismoTel {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 117%;
+        text-align: center;
+        color: #8306a1;
+      }
+
+      .color-white {
+        color: #fff;
+      }
+
+      .bg-white {
+        background: #f5f5f5;
+      }
+
+      .pismo-data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 117%;
+        text-align: center;
+        color: #222221;
+        border-radius: 99px;
+        padding: 10px 18px;
+        width: 251px;
+        height: 48px;
+        background: #00ee9a;
+      }
+
+    </style>
+
+</head>
+<body class="py-4">
+    <table class="pismo-table">
+        <!-- Header -->
+        <tr>
+            <td class="pismo-header">
+                <div class="d-flex justify-content-center mb-5">
+                  <img src="../assets/img/Лого.png" alt="Cosmo Gadget Logo" class="img-fluid">
+                </div>
+                <h1 class="noZakaz text-center mb-5">Здравствуйте, Пользователь Иванов!</h1>
+                <p class="pismoHeader-text">Ваш заказ на сайте <br><a href="#">cosmo@example.com</a> <span class="color-blue">выдан курьеру</span></p>
+                <div class="my-5">
+                  <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_266_5821)">
+                    <circle cx="21" cy="21" r="21" fill="#00EEDA"/>
+                    </g>
+                    <g clip-path="url(#clip0_266_5821)">
+                    <path d="M21.0128 15.2534L12.7711 12.497L19.5562 10.2356C20.497 9.92204 21.514 9.92204 22.4547 10.2356L29.2555 12.5025L21.0128 15.2534ZM18.096 20.4078L20.0897 17.0858L12.8059 14.6576C12.5315 14.5661 12.2341 14.5709 11.9628 14.6712C11.6914 14.7715 11.4624 14.9614 11.3136 15.2094L10.2805 16.9328C10.1373 17.1713 10.0495 17.4389 10.0237 17.7159C9.9978 17.9929 10.0345 18.2721 10.131 18.533C10.2275 18.7939 10.3815 19.0298 10.5814 19.2233C10.7813 19.4167 11.0221 19.5628 11.2861 19.6507L15.9437 21.2035C16.3393 21.3353 16.7681 21.3284 17.1592 21.1837C17.5503 21.039 17.8814 20.7654 18.096 20.4078ZM12.7555 12.4915V12.5016L12.7711 12.497L12.7555 12.4915ZM20.0888 31.9129V20.6489L19.6672 21.3511C19.2408 22.0693 18.5806 22.6193 17.7971 22.909C17.0137 23.1987 16.1545 23.2105 15.3634 22.9424L11.8388 21.7682V25.9463C11.8388 26.9083 12.1415 27.8458 12.704 28.6262C13.2665 29.4065 14.0603 29.9901 14.9729 30.2941L19.0383 31.6489C19.3812 31.7598 19.7332 31.8506 20.0888 31.912V31.9129ZM31.7488 16.963L30.6965 15.2094C30.5476 14.9614 30.3186 14.7715 30.0473 14.6712C29.776 14.5709 29.4786 14.5661 29.2042 14.6576L21.9212 17.0849L23.915 20.4069C24.1294 20.7647 24.4595 21.0386 24.8507 21.1833C25.2419 21.328 25.6708 21.3348 26.0664 21.2026L30.7579 19.6388C31.0177 19.5521 31.2548 19.4081 31.4516 19.2176C31.6484 19.027 31.7998 18.7948 31.8949 18.5379C31.9899 18.2809 32.026 18.006 32.0006 17.7333C31.9751 17.4605 31.8888 17.197 31.7479 16.9621L31.7488 16.963ZM25.4742 23.1349C24.8427 23.1347 24.222 22.9702 23.6731 22.6576C23.1243 22.3451 22.6662 21.8951 22.3438 21.352L21.9222 20.6498V31.9083C22.309 31.8405 22.6922 31.7415 23.0552 31.6205H23.0643L27.0381 30.295C27.9506 29.9908 28.7444 29.4073 29.3069 28.627C29.8693 27.8467 30.1721 26.9092 30.1722 25.9473V21.7682L26.6476 22.9433C26.2694 23.0703 25.8731 23.135 25.4742 23.1349Z" fill="#222221"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_266_5821" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="2" dy="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.933333 0 0 0 0 0.854902 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_266_5821"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_266_5821" result="shape"/>
+                    </filter>
+                    <clipPath id="clip0_266_5821">
+                    <rect width="22" height="22" fill="white" transform="translate(10 10)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>                    
+                </div>
+                <p class="noZakaz">№ заказа: <strong class="fw-bolder">09900301</strong></p>
+
+                <div class="activeZakazBlock bg-white mt-5">
+                  <div class="pismoTableTitle">
+                    Пожалуйста, ожидайте курьера <br> в указанный срок:
+                  </div>                  
+                  <div class="d-flex justify-content-center">
+                    <div class="pismo-data mt-4">
+                      02.10.2025 в &nbsp;<span class="fw-bold"> 12:00</span>
+                    </div>
+                  </div>
+                </div>
+                <h1 class="pismoTableTitle mt-5 mb-5 text-center color-white">Заберите ваш заказ по адресу:</h1>
+                  <div class="d-flex justify-content-center">
+                    <svg width="24" height="34" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.0061 33.5508C13.4551 33.0445 24 21.0588 24 12.8198C24 -4.16943 0 -4.37677 0 12.8198C0 21.0588 10.5449 33.0445 10.9939 33.5508C11.5255 34.15 12.4756 34.1494 13.0061 33.5508ZM7.99985 11.774C7.99985 9.61101 9.79432 7.85159 12 7.85159C14.2053 7.85159 15.9998 9.6111 15.9998 11.774C15.9998 13.9366 14.2053 15.696 12 15.696C9.79432 15.696 7.99985 13.9366 7.99985 11.774Z" fill="#00EE9A" />
+                    </svg>
+                  </div>
+
+                  <p class="pismoAdress mt-4 color-white">
+                    Москва, Багратионовский <br> проезд, 7к2, БЦ "Рубин", первый <br> этаж, основная проходная
+                  </p>
+            </td>
+        </tr>
+
+    </table>
+</body>
+</html>
