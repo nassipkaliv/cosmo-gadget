@@ -2859,7 +2859,11 @@ input::-webkit-inner-spin-button {
       }
 
       .catalog-rect {
+        display: none;
+      }
 
+      .catalog-rect-mobile {
+        display: flex;
       }
 
       .d-flex .catalog-nav-links {
