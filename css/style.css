@@ -278,7 +278,7 @@ section {
     background: url("../assets/img/divider-fon.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 25px 0px;
+    padding: 60px 0px;
 }
 
 .divider {
@@ -292,7 +292,7 @@ section {
     height: 490px;
     box-shadow: 0 4px 45px 0 rgba(0, 0, 0, 0.4);
     background: #f5f5f5;
-    padding: 60px 40px;
+    padding: 80px;
     position: relative;
 }
 
@@ -301,7 +301,7 @@ section {
     background: #8306a1;
     border-radius: 32px;
     height: 490px;
-    padding: 60px 40px;
+    padding: 80px;
     position: relative;
     bottom: 80px;
 }
@@ -2622,7 +2622,6 @@ input::-webkit-inner-spin-button {
       bottom: 4px;
     }
     
-
     
     .cart-menu {
       display: none;
@@ -3506,6 +3505,11 @@ input::-webkit-inner-spin-button {
       .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
           max-width: 1440px !important;
       }
+
+      .footer-catalog-nav-links {
+        gap: 30px !important;
+      }
+  
       
 
 
